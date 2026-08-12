@@ -1,0 +1,15 @@
+services:
+  generator:
+    build: .
+    container_name: profile_generator
+    restart: unless-stopped
+    ports:
+      - "8182:8182"
+    volumes:
+      - ./proxy:/app/generator/proxy
+      - ./profiles:/app/generator/profiles
+      - ./output:/app/output
+      - ./app.py:/app/app.py         # Заодно пробросим сам скрипт, чтобы не пересобирать при изменении кода
+      - ./templates:/app/templates   # <-- Добавили проброс шаблонов
+      - ./mistral.txt:/app/mistral.txt
+      

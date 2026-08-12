@@ -1,0 +1,178 @@
+
+h1,h2,h3,h4{
+	background-color: #39008a !important;
+	color: transparent !important;
+	background-image: linear-gradient(45deg, #654f78 0, #feac82 35%, #654f78 60%, #553075 100%) !important;
+	-webkit-background-clip: text !important;
+	font-family:"Chakra Medium" !important;
+}
+
+/* @font-face {
+	font-family:"Chakra Medium";
+	src: url('../fonts/chakra/ChakraPetch-Medium.ttf');
+} */
+
+@font-face {
+    font-family:"Chakra Medium";
+    /* font-family: 'Chakra Petch'; */
+    src: url('../fonts/chakra/ChakraPetch-Medium.eot');
+    src: url('../fonts/chakra/ChakraPetch-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chakra/ChakraPetch-Medium.woff2') format('woff2'),
+        url('../fonts/chakra/ChakraPetch-Medium.woff') format('woff'),
+        url('../fonts/chakra/ChakraPetch-Medium.ttf') format('truetype'),
+        url('../fonts/chakra/ChakraPetch-Medium.svg#ChakraPetch-Medium') format('svg');
+    /* font-weight: 500;
+    font-style: normal; */
+    font-display: swap;
+}
+
+@media screen and (max-width: 1000px) {
+  .onlyPC {
+    display:none;
+  }
+}
+
+.biki_reviews{
+	width:100%;
+	display:block;
+	float:left;
+}
+
+.biki_review{
+	width:100%;
+	display:block;
+	float:left;
+}
+
+.biki_review_head{
+	width: 100%;
+	display: block;
+	float: left;
+	color: white;
+	box-sizing: border-box;
+	padding: 10px 30px 10px 30px;
+}
+
+.biki_review:nth-child(odd) .biki_review_head{
+    background-color: #282828;
+}
+.biki_review:nth-child(even) .biki_review_head{
+    background-color: #ee7872;
+}
+
+.biki_review_body{
+	width:100%;
+	display:block;
+	float:left;
+	text-align:justify;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.biki_review_head_title{
+	text-transform: uppercase;
+}
+
+ul{
+	list-style-image: url("/templates/cyber/li2.png");
+}
+
+.pagination ul{float:left;}
+
+.rt-table-sale{
+	color:#735988;
+	font-size:24px;
+}
+.rt-table-sale s{
+	float:right;
+	font-size:18px;
+	color: #6e6e6e;
+}
+
+li {
+	line-height: 27px;
+}
+
+div.module-130 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.module-130 > div {
+  flex: 1 1 100%;
+}
+.module-130 > div:first-child {
+  flex: 1 1 max-content;
+}
+  @media (max-width: 767px) {
+    div.module-130 {
+      flex-wrap: wrap;
+    }
+    div.module-130 > div {
+      flex: 1 1 auto;
+    }
+  }
+
+
+
+
+/* Глобальные стили для всех выпадающих списков */
+select {
+    font-family: "Chakra Medium", "Courier New", monospace !important;
+/*    font-size: 20px;  */
+    padding: 11px 14px; /* Увеличиваем отступы */
+    border: 2px solid #e5e5e5;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Градиентная галка вместо стрелки */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="url(%23gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23654f78"/><stop offset="35%" stop-color="%23feac82"/><stop offset="60%" stop-color="%23654f78"/><stop offset="100%" stop-color="%23553075"/></linearGradient></defs><polyline points="6 10 12 16 18 10"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 24px;
+    padding-right: 40px; /* Увеличиваем для большой галки */
+    transition: all 0.6s ease;
+}
+
+/* Градиентная обводка при взаимодействии */
+select:hover {
+    border-color: #aaa;
+    box-shadow: 0 0 0 2px rgba(101, 79, 120, 0.2);
+}
+
+select:focus {
+    outline: none;
+    border-color: #654f78;
+    box-shadow: 0 0 0 3px rgba(101, 79, 120, 0.3);
+}
+
+/* Пункты списка */
+select option {
+    font-family: "Chakra Medium", "Courier New", monospace !important;
+    font-size: 18px; /* Чуть меньше основного */
+    padding: 12px;
+    background: white;
+}
+
+/* Градиентный эффект для активного пункта 
+select option:checked {
+    background: linear-gradient(45deg, #654f78 0%, #feac82 35%, #654f78 60%, #553075 100%);
+    color: white;
+}
+*/
+
+/* Кастомный скролл-бар (опционально) */
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #654f78, #feac82);
+    border-radius: 4px;
+}
+
+

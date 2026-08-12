@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generator - Second Life</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:        #0d0b14;
+            --bg2:       #12101d;
+            --panel:     #18152a;
+            --border:    #2e2848;
+            --accent:    #b388ff;
+            --accent2:   #ffd54f;
+            --dim:       #2a2545;
+            --text:      #d1c4e9;
+            --text-dim:  #7e6fa6;
+            --danger:    #ef5350;
+            --warning:   #ffb74d;
+            --mono:      'Share Tech Mono', monospace;
+            --display:   'Orbitron', sans-serif;
+            --retro:     'VT323', monospace;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--mono);
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 15px 20px;
+            font-size: 17px;
+            background-image:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(179,136,255,0.015) 2px,
+                    rgba(179,136,255,0.015) 4px
+                );
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent 0px,
+                transparent 3px,
+                rgba(0,0,0,0.08) 3px,
+                rgba(0,0,0,0.08) 4px
+            );
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .terminal-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .header {
+            border: 1px solid var(--border);
+            border-bottom: none;
+            padding: 12px 24px 10px;
+            background: var(--panel);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+        }
+        .header-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 10px;
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;}
+        .dot-r { background: linear-gradient(135deg, #4a148c, #7b1fa2); }
+        .dot-y { background: linear-gradient(135deg, #7b1fa2, #b388ff); }
+        .dot-g { background: linear-gradient(135deg, #b388ff, #e1bee7); }
+
+        .header-title {
+            font-family: var(--display);
+            font-size: 14px;
+            color: var(--text-dim);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        h1 {
+            font-family: var(--display);
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--accent);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 25px rgba(179,136,255,0.4);
+            white-space: nowrap;
+        }
+        .version-tag {
+            font-family: var(--retro);
+            font-size: 22px;
+            color: var(--accent2);
+            opacity: 0.8;
+        }
+        .subtitle {
+            font-family: var(--retro);
+            font-size: 16px;
+            color: var(--text-dim);
+            letter-spacing: 2px;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .main-grid .panel {
+            border-top: none;
+        }
+        .main-grid .panel:first-child {
+            border-right: none;
+        }
+
+        .panel {
+            border: 1px solid var(--border);
+            background: var(--panel);
+            padding: 20px 24px;
+        }
+
+        .section-label {
+            font-family: var(--display);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        label {
+            font-family: var(--mono);
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+
+        select, input[type="number"] {
+            font-family: var(--mono);
+            background: var(--bg2);
+            border: 1px solid var(--dim);
+            color: var(--text);
+            font-size: 17px;
+            padding: 10px 14px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        select:focus, input[type="number"]:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px rgba(179,136,255,0.2), inset 0 0 12px rgba(179,136,255,0.05);
+        }
+        select option {
+            font-family: var(--mono);
+            background: var(--bg2);
+            color: var(--text);
+        }
+
+        .stats-badge {
+            margin-top: 4px;
+            font-family: var(--mono);
+            font-size: 14px;
+            color: var(--text-dim);
+            min-height: 20px;
+            transition: color 0.3s;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .stat-item { display: flex; align-items: center; gap: 6px; }
+        .stat-val {
+            font-family: var(--retro);
+            font-size: 20px;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .stat-val.warn { color: var(--warning); }
+        .stat-val.ok   { color: var(--accent); }
+
+        .count-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .count-row input {
+            width: 140px;
+        }
+        .capacity-hint {
+            font-family: var(--retro);
+            font-size: 22px;
+            color: var(--text-dim);
+        }
+        .capacity-hint .cap-num { color: var(--accent2); }
+
+        .options-block {
+            margin-bottom: 16px;
+            padding: 14px 16px;
+            border: 1px solid var(--dim);
+            background: var(--bg2);
+        }
+        .options-block > label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: none;
+            letter-spacing: 1px;
+        }
+        .options-block > label:last-child { margin-bottom: 0; }
+
+        .options-block input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--dim);
+            background: var(--bg);
+            cursor: pointer;
+            position: relative;
+            flex-shrink: 0;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .options-block input[type="checkbox"]:checked {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+        .options-block input[type="checkbox"]:checked::after {
+            content: '';
+            position: absolute;
+            left: 5px; top: 1px;
+            width: 6px; height: 10px;
+            border: solid var(--bg);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .reuse-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 8px;
+            padding-left: 32px;
+            opacity: 0.4;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .reuse-row.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .reuse-row label {
+            font-size: 14px;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: default;
+        }
+        .reuse-row input[type="number"] {
+            width: 100px;
+            padding: 8px 10px;
+            font-size: 17px;
+        }
+
+        .num-input-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .num-input-row label {
+            font-size: 14px;
+            text-transform: none;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        .num-input-row input {
+            width: 90px;
+            padding: 8px 10px;
+            font-size: 17px;
+        }
+
+        .btn-generate {
+            font-family: var(--display);
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 14px 36px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.2s, box-shadow 0.2s;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-generate::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--accent);
+            transform: translateX(-101%);
+            transition: transform 0.2s;
+            z-index: 0;
+        }
+        .btn-generate:hover::before { transform: translateX(0); }
+        .btn-generate:hover { color: var(--bg); box-shadow: 0 0 25px rgba(179,136,255,0.3); }
+        .btn-generate span { position: relative; z-index: 1; }
+        .btn-generate:disabled {
+            border-color: var(--dim);
+            color: var(--text-dim);
+            cursor: not-allowed;
+        }
+        .btn-generate:disabled::before { display: none; }
+
+        .progress-wrap {
+            height: 3px;
+            background: var(--dim);
+            margin-top: 14px;
+            display: none;
+        }
+        .progress-wrap.visible { display: block; }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            width: 0%;
+            transition: width 0.4s;
+            box-shadow: 0 0 12px var(--accent);
+        }
+
+        .status-line {
+            margin-top: 10px;
+            font-family: var(--mono);
+            font-size: 15px;
+            min-height: 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cursor-blink {
+            display: inline-block;
+            width: 10px; height: 18px;
+            background: var(--accent);
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .status-ok   { color: var(--accent); }
+        .status-warn { color: var(--warning); }
+        .status-err  { color: var(--danger); }
+
+        .result-panel {
+            border: 1px solid var(--border);
+            border-top: none;
+            background: var(--bg2);
+            padding: 0;
+            display: none;
+        }
+        .result-panel.visible { display: block; }
+        .result-header {
+            padding: 10px 20px;
+            background: var(--panel);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .result-title {
+            font-family: var(--display);
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+        .result-actions { display: flex; gap: 10px; }
+
+        .btn-small {
+            font-family: var(--mono);
+            font-size: 17px;
+            background: transparent;
+            border: 1px solid var(--dim);
+            color: var(--text-dim);
+            padding: 6px 14px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all 0.15s;
+        }
+        .btn-small:hover {
+            border-color: var(--accent2);
+            color: var(--accent2);
+        }
+
+        textarea {
+            font-family: var(--mono);
+            width: 100%;
+            height: 250px;
+            background: transparent;
+            border: none;
+            color: #ce93d8;
+            font-size: 15px;
+            padding: 16px 20px;
+            resize: vertical;
+            outline: none;
+            line-height: 1.6;
+        }
+
+        .footer {
+            border: 1px solid var(--border);
+            border-top: 1px solid var(--dim);
+            padding: 10px 24px;
+            background: var(--panel);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--mono);
+            font-size: 14px;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+        }
+        .footer-right {
+            display: flex;
+            gap: 30px;
+        }
+        .footer-accent { color: var(--accent2); }
+        .footer-llm { color: var(--accent); }
+
+        .select-wrap { position: relative; }
+        .select-wrap::after {
+            content: '';
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid var(--accent);
+            pointer-events: none;
+        }
+        .select-wrap select { padding-right: 36px; }
+
+        @media (max-width: 1000px) {
+            .main-grid { grid-template-columns: 1fr; }
+            .main-grid .panel:first-child { border-right: 1px solid var(--border); }
+            .header { flex-wrap: wrap; }
+            .subtitle { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="terminal-wrapper">
+
+    <div class="header">
+        <div class="header-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+        </div>
+        <span class="header-title">profile_generator.py</span>
+        <div style="display:flex;align-items:baseline;gap:8px;">
+            <h1>GEN//SMART</h1>
+            <span class="version-tag">v 3.0</span>
+        </div>
+        <span class="subtitle">// PROXY-BASED IDENTITY SYNTHESIS //</span>
+    </div>
+
+    <div class="main-grid">
+        <div class="panel">
+            <div class="section-label">[ INPUT CONFIGURATION ]</div>
+
+            <div class="form-group">
+                <label>&#9656; File proxy</label>
+                <div class="select-wrap">
+                    <select id="proxy_file">
+                        {% for f in proxy_files %}
+                            <option value="{{ f }}">{{ f }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="stats-badge" id="proxy_stats">
+                    <span class="stat-item">
+                        <span class="stat-val" id="proxy_count">&mdash;</span>
+                        <span>lines</span>
+                    </span>
+                    <span class="stat-item">
+                        <span class="stat-val" id="proxy_capacity">&mdash;</span>
+                        <span>max</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>&#9656; File profiles</label>
+                <div class="select-wrap">
+                    <select id="profile_file">
+                        {% for f in profile_files %}
+                            <option value="{{ f.value }}">{{ f.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="stats-badge" id="profile_stats">
+                    <span class="stat-item">
+                        <span class="stat-val" id="profile_total">&mdash;</span>
+                        <span>total</span>
+                    </span>
+                    <span class="stat-item">
+                        <span class="stat-val" id="profile_valid">&mdash;</span>
+                        <span>valid</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-label">[ PROXY OPTIONS ]</div>
+            <div class="options-block">
+                <label>
+                    <input type="checkbox" id="allow_dup">
+                    <span>Allow duplicate proxies for backup fields</span>
+                </label>
+                <div class="reuse-row" id="reuseRow">
+                    <label>Max reuse per proxy:</label>
+                    <input type="number" id="max_reuse" value="2" min="1" max="99">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="section-label">[ GENERATION SETTINGS ]</div>
+
+            <div class="count-row">
+                <label style="margin:0; white-space:nowrap;">&#9656; Count:</label>
+                <input type="number" id="count" value="10" min="1" style="width:120px;">
+                <div class="capacity-hint" id="capacity_hint"></div>
+            </div>
+
+            <div class="section-label" style="margin-top:8px;">[ INTERESTS MODIFIERS ]</div>
+            
+            <div class="options-block">
+                <label>
+                    <input type="checkbox" id="modify_interests">
+                    <span>Modify Interests (via LLM)</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="shrink_intention" checked>
+                    <span>Shrink intention</span>
+                </label>
+            </div>
+
+            <div class="num-input-row">
+                <label for="limit_interests">Limit interests to:</label>
+                <input type="number" id="limit_interests" value="0" min="0" title="0 = disabled">
+                <label for="dummy_interests" style="margin-left:16px;">Add dummy interests to:</label>
+                <input type="number" id="dummy_interests" value="0" min="0" title="0 = disabled">
+            </div>
+
+            <button class="btn-generate" id="btnGenerate" onclick="doGenerate()">
+                <span>&#9889; GENERATE</span>
+            </button>
+
+            <div class="progress-wrap" id="progressWrap">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="status-line" id="statusLine"></div>
+        </div>
+    </div>
+
+    <div class="result-panel" id="resultPanel">
+        <div class="result-header">
+            <span class="result-title">[ OUTPUT // JSON ]</span>
+            <div class="result-actions">
+                <button class="btn-small" onclick="doCopy()">[ COPY ]</button>
+                <button class="btn-small" onclick="doDownload()">[ SAVE ]</button>
+            </div>
+        </div>
+        <textarea id="outputArea" readonly spellcheck="false"></textarea>
+    </div>
+
+    <div class="footer">
+        <span>TARJA.DRACH.PRO // GENERATOR MODULE</span>
+        <div class="footer-right">
+            <span class="footer-accent" id="footerStats">READY</span>
+            <span class="footer-llm" id="footerLlm" style="display:none;"></span>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const cbDup = document.getElementById('allow_dup');
+    const reuseRow = document.getElementById('reuseRow');
+    cbDup.addEventListener('change', function() {
+        reuseRow.classList.toggle('active', this.checked);
+    });
+
+    async function loadStats() {
+        const proxyFile    = document.getElementById('proxy_file').value;
+        const profileFile  = document.getElementById('profile_file').value;
+
+        setEl('proxy_count',    '\u2026');
+        setEl('proxy_capacity', '\u2026');
+        setEl('profile_total',  '\u2026');
+        setEl('profile_valid',  '\u2026');
+        setEl('capacity_hint',  '');
+
+        if (!proxyFile || !profileFile) return;
+
+        try {
+            const resp = await fetch('/generator/stats', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ proxy_file: proxyFile, profile_file: profileFile })
+            });
+
+            if (!resp.ok) {
+                const err = await resp.json().catch(() => ({}));
+                showStatus('err', '\u26A0 ' + (err.error || 'Stats error'));
+                return;
+            }
+
+            const d = await resp.json();
+            const allowDup = document.getElementById('allow_dup').checked;
+            const maxReuse = parseInt(document.getElementById('max_reuse').value) || 1;
+
+            let maxProfiles;
+
+            if (allowDup) {
+                maxProfiles = d.proxy_count;
+            } else {
+                let remaining = d.proxy_count;
+                maxProfiles = 0;
+                while (remaining > 0) {
+                    remaining -= 1;
+                    maxProfiles += 1;
+                    if (remaining >= 2) {
+                        remaining -= 2;
+                    } else if (remaining === 1) {
+                        remaining -= 1;
+                    }
+                }
+            }
+
+            const colorP = maxProfiles > 0 ? 'ok' : 'warn';
+            const colorV = d.profile_valid > 0 ? 'ok' : 'warn';
+
+            setEl('proxy_count',    d.proxy_count,    colorP);
+            setEl('proxy_capacity', maxProfiles,       colorP);
+            setEl('profile_total',  d.profile_total,  '');
+            setEl('profile_valid',  d.profile_valid,  colorV);
+
+            const hint = maxProfiles > 0
+                ? '<span class="cap-num">' + maxProfiles + '</span> max profiles'
+                : '<span style="color:var(--danger)">not enough proxies</span>';
+            document.getElementById('capacity_hint').innerHTML = hint;
+
+            const countEl = document.getElementById('count');
+            countEl.max = maxProfiles || 1;
+            if (parseInt(countEl.value) > maxProfiles) countEl.value = maxProfiles;
+
+        } catch(e) {
+            showStatus('err', '\u26A0 Network error loading stats');
+        }
+    }
+
+    function setEl(id, val, cls) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = val;
+        el.className = 'stat-val' + (cls ? ' ' + cls : '');
+    }
+
+    document.getElementById('proxy_file').addEventListener('change', loadStats);
+    document.getElementById('profile_file').addEventListener('change', loadStats);
+    document.getElementById('allow_dup').addEventListener('change', loadStats);
+    document.getElementById('max_reuse').addEventListener('input', loadStats);
+    window.addEventListener('DOMContentLoaded', loadStats);
+
+    async function doGenerate() {
+        const btn    = document.getElementById('btnGenerate');
+        const count  = parseInt(document.getElementById('count').value) || 0;
+
+        if (count <= 0) { showStatus('err', '\u26A0 Count must be > 0'); return; }
+
+        btn.disabled = true;
+        showStatus('info', 'Synthesizing profiles\u2026');
+        animateProgress();
+
+        const body = {
+            proxy_file:       document.getElementById('proxy_file').value,
+            profile_file:     document.getElementById('profile_file').value,
+            count:            count,
+            allow_dup:        document.getElementById('allow_dup').checked,
+            max_reuse:        parseInt(document.getElementById('max_reuse').value) || 1,
+            modify_interests: document.getElementById('modify_interests').checked,
+            shrink_intention: document.getElementById('shrink_intention').checked,
+            limit_interests:  parseInt(document.getElementById('limit_interests').value) || 0,
+            dummy_interests:  parseInt(document.getElementById('dummy_interests').value) || 0
+        };
+
+        try {
+            const resp = await fetch('/generator/generate', {
+                method:  'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body:    JSON.stringify(body)
+            });
+
+            stopProgress(resp.ok);
+
+            if (!resp.ok) {
+                const text = await resp.text();
+                let msg = 'Server error ' + resp.status;
+                try {
+                    const j = JSON.parse(text);
+                    msg = j.error || msg;
+                } catch(_) {
+                    msg += ' (not JSON)';
+                }
+                showStatus('err', '\u2716 ' + msg);
+                btn.disabled = false;
+                return;
+            }
+
+            const data = await resp.json();
+            const out  = document.getElementById('outputArea');
+            out.value  = JSON.stringify(data.profiles, null, 2);
+
+            const panel = document.getElementById('resultPanel');
+            panel.classList.add('visible');
+            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            const isWarn = data.message && data.message.startsWith('WARNING');
+            showStatus(isWarn ? 'warn' : 'ok',
+                (isWarn ? '\u26A0 ' : '\u2714 ') + (data.message || 'Done'));
+
+            document.getElementById('footerStats').textContent =
+                'GENERATED: ' + data.profiles.length + ' PROFILES';
+
+            const llmCount = data.stats && data.stats.llm_modified_count;
+            const llmEl = document.getElementById('footerLlm');
+            if (llmCount !== undefined && llmCount > 0) {
+                llmEl.textContent = 'LLM MODIFIED: ' + llmCount;
+                llmEl.style.display = 'inline';
+            } else {
+                llmEl.style.display = 'none';
+            }
+
+        } catch(e) {
+            stopProgress(false);
+            showStatus('err', '\u2716 Network error: ' + e.message);
+        }
+
+        btn.disabled = false;
+        loadStats();
+    }
+
+    function showStatus(type, msg) {
+        const el = document.getElementById('statusLine');
+        const cls = { ok: 'status-ok', warn: 'status-warn', err: 'status-err', info: '' }[type] || '';
+        el.innerHTML = '<span class="' + cls + '">' + msg + '</span>' +
+            (type === 'info' ? '<span class="cursor-blink"></span>' : '');
+    }
+
+    let _progTimer = null;
+    function animateProgress() {
+        const wrap = document.getElementById('progressWrap');
+        const bar  = document.getElementById('progressBar');
+        wrap.classList.add('visible');
+        bar.style.width = '0%';
+        let w = 0;
+        _progTimer = setInterval(() => {
+            w = Math.min(w + Math.random() * 8, 88);
+            bar.style.width = w + '%';
+        }, 200);
+    }
+    function stopProgress(success) {
+        clearInterval(_progTimer);
+        const bar = document.getElementById('progressBar');
+        bar.style.width = success ? '100%' : '0%';
+        if (!success) bar.style.background = 'var(--danger)';
+        setTimeout(() => {
+            document.getElementById('progressWrap').classList.remove('visible');
+            bar.style.background = '';
+        }, 600);
+    }
+
+    function doCopy() {
+        const text = document.getElementById('outputArea').value;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+                showStatus('ok', '\u2714 Copied to clipboard');
+            }).catch(() => {
+                fallbackCopy();
+            });
+        } else {
+            fallbackCopy();
+        }
+    }
+
+    function fallbackCopy() {
+        const ta = document.getElementById('outputArea');
+        ta.select();
+        document.execCommand('copy');
+        showStatus('ok', '\u2714 Copied to clipboard!');
+    }
+
+    function doDownload() {
+        const text = document.getElementById('outputArea').value;
+        const blob = new Blob([text], { type: 'application/json' });
+        const url  = URL.createObjectURL(blob);
+        const a    = document.createElement('a');
+        a.href = url;
+        a.download = 'profiles_output.json';
+        a.click();
+        URL.revokeObjectURL(url);
+        showStatus('ok', '\u2714 File saved');
+    }
+</script>
+</body>
+</html>

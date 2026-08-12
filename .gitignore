@@ -1,0 +1,10 @@
+mistral.txt
+*.bak
+stats/
+
+# Игнорируем содержимое папок, но оставляем сами папки
+proxy/*
+!proxy/.gitkeep
+
+profiles/*
+!profiles/.gitkeep

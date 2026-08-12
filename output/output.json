@@ -1,0 +1,172 @@
+[
+  {
+    "age": 43,
+    "proxy": "socks5://185.201.139.174:1085",
+    "backupProxies": [
+      "socks5://45.132.184.33:1085",
+      "socks5://170.168.240.105:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "charity fraud detection proxies",
+      "donation transparency monitoring",
+      "legitimate nonprofit research"
+    ],
+    "intention": "embezzlement monitoring",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:113.0) Gecko/20100101 Firefox/113.0",
+    "resolution": "3440x1440"
+  },
+  {
+    "age": 23,
+    "proxy": "socks5://170.168.240.249:1085",
+    "backupProxies": [
+      "socks5://185.201.136.146:1085",
+      "socks5://155.212.39.174:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "internship salary transparency proxies",
+      "career research tools",
+      "legitimate student advocacy"
+    ],
+    "intention": "compensation collecting internship",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 37,
+    "proxy": "socks5://185.201.138.76:1085",
+    "backupProxies": [
+      "socks5://45.140.206.165:1085",
+      "socks5://45.132.184.34:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "social listening proxy farms",
+      "brand sentiment monitoring",
+      "legitimate reputation management"
+    ],
+    "intention": "monitoring platforms mentions",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/133.0.2965.0 Safari/537.36",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 49,
+    "proxy": "socks5://193.151.189.70:1085",
+    "backupProxies": [
+      "socks5://185.168.29.14:1085",
+      "socks5://194.99.26.116:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "vacation rental price research",
+      "short term rental analytics",
+      "legitimate housing policy study"
+    ],
+    "intention": "affordability analyzing",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0",
+    "resolution": "3840x1600"
+  },
+  {
+    "age": 33,
+    "proxy": "socks5://185.201.137.193:1085",
+    "backupProxies": [
+      "socks5://170.168.243.82:1085",
+      "socks5://45.88.13.173:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "sports odds monitoring proxies",
+      "legitimate betting research",
+      "market movement analysis"
+    ],
+    "intention": "efficiency aggregate academic",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "3440x1440"
+  },
+  {
+    "age": 55,
+    "proxy": "socks5://157.22.44.73:1085",
+    "backupProxies": [
+      "socks5://185.201.136.148:1085",
+      "socks5://45.148.124.200:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "competitor content gap analysis proxies",
+      "topic modeling research",
+      "legitimate content strategy"
+    ],
+    "intention": "identifying competitors",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 56,
+    "proxy": "socks5://170.168.99.228:1085",
+    "backupProxies": [
+      "socks5://45.140.207.24:1085",
+      "socks5://77.81.65.132:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "copyright infringement detection",
+      "piracy monitoring proxies",
+      "legitimate IP enforcement"
+    ],
+    "intention": "unauthorized distribution",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15",
+    "resolution": "5120x2160"
+  },
+  {
+    "age": 78,
+    "proxy": "socks5://170.168.240.173:1085",
+    "backupProxies": [
+      "socks5://45.88.13.167:1085",
+      "socks5://185.201.136.133:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "in-home care rate research",
+      "private duty nursing proxies",
+      "legitimate elder services"
+    ],
+    "intention": "comparison comparing caregiver",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.13 Safari/605.1.15",
+    "resolution": "2560x1080"
+  },
+  {
+    "age": 29,
+    "proxy": "socks5://185.168.31.61:1085",
+    "backupProxies": [
+      "socks5://45.159.22.48:1085",
+      "socks5://89.47.55.137:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "Pinterest trend monitoring proxies",
+      "visual discovery research",
+      "legitimate creative insights"
+    ],
+    "intention": "identifying emerging",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 29,
+    "proxy": "socks5://157.22.47.68:1085",
+    "backupProxies": [
+      "socks5://185.88.100.251:1085",
+      "socks5://194.99.26.121:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "ad verification proxy pools",
+      "brand safety monitoring",
+      "legitimate programmatic audit infrastructure"
+    ],
+    "intention": "placements exchanges",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "resolution": "3840x2160"
+  }
+]
