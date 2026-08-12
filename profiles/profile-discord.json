@@ -1,0 +1,47 @@
+[
+{
+"gender": "male",
+"age": 56,
+"interests": ["beekeeping club platform", "apiary management community", "share swarm alerts locally"],
+"intention": "coordinates 40 beekeepers, needs pest outbreak alerts and equipment swap",
+"useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.67 Safari/537.36",
+"resolution": "3000x2000",
+"proxy": "1.1.1.1:1"
+},
+{
+"gender": "female",
+"age": 70,
+"interests": ["genealogy society platform", "family history research group", "share archives with members"],
+"intention": "runs a county genealogy society, needs tree sharing and document repository",
+"useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+"resolution": "3440x1440",
+"proxy": "1.1.1.1:1"
+},
+{
+"gender": "male",
+"age": 44,
+"interests": ["magic circle for amateur magicians", "illusionist community platform", "share performance tips privately"],
+"intention": "wants secret group to discuss techniques without exposing secrets publicly",
+"useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+"resolution": "2560x1440",
+"proxy": "1.1.1.1:1"
+},
+{
+"gender": "female",
+"age": 31,
+"interests": ["clinical research coordinator group", "trial management community", "share protocol tips with peers"],
+"intention": "wants to join network of 100 crc's for rapid troubleshooting",
+"useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+"resolution": "3840x2160",
+"proxy": "1.1.1.1:1"
+},
+{
+"gender": "male",
+"age": 73,
+"interests": ["telescope making club platform", "amateur optics community", "share grinding techniques"],
+"intention": "wants to mentor 5 people in mirror grinding, needs video sharing and logs",
+"useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.67 Safari/537.36",
+"resolution": "1920x1200",
+"proxy": "1.1.1.1:1"
+}
+]
