@@ -22,7 +22,8 @@ Make sure you have your `proxy` and `profiles` directories set up (the app expec
    docker-compose up -d --build
    
 2.   The app will internally wake up on port 8182.
-🌐 Reverse Proxy Setup (Angie / Nginx)
+
+## 🌐 Reverse Proxy Setup (Angie / Nginx) 
 If you want to expose the generator to the web under a virtual subfolder (e.g., http://your-domain.com:8080/generator/), you'll need a reverse proxy. Here is a battle-tested config for Angie (or Nginx).
 Note: The /static/ block is crucial. Since the Flask app runs at the root of its container, asking for CSS/JS from /generator/static/ will result in 404s. This config gracefully handles that.
 
