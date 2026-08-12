@@ -29,8 +29,7 @@ Note: The /static/ block is crucial. Since the Flask app runs at the root of its
 
 server {
     listen 8080;
-    server_name tarja.drach.pro;
-
+    server_name NAME;
     access_log /var/log/angie/tarja.access.log;
     error_log  /var/log/angie/tarja.error.log;
 
