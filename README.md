@@ -1,5 +1,9 @@
 # GEN//SMART - JSON Profile Generator v3.0 with LLM support
 
+<img width="1319" height="806" alt="image" src="https://github.com/user-attachments/assets/ccc65ae0-1818-41ba-8301-c9beeb7c9fd8" />
+
+
+
 > // PROXY-BASED IDENTITY SYNTHESIS //
 
 Welcome to the Generator. This isn't just a Python/Flask app; it's a retro-cyberpunk terminal wrapped in a Docker container, designed to synthesize profiles with style. It features a CRT-like violet UI, blinky cursors, and LLM-powered logic under the hood.
@@ -25,8 +29,10 @@ Make sure you have your `proxy` and `profiles` directories set up (the app expec
 
 ## 🌐 Reverse Proxy Setup (Angie / Nginx) 
 If you want to expose the generator to the web under a virtual subfolder (e.g., http://your-domain.com:8080/generator/), you'll need a reverse proxy. Here is a battle-tested config for Angie (or Nginx).
-Note: The /static/ block is crucial. Since the Flask app runs at the root of its container, asking for CSS/JS from /generator/static/ will result in 404s. This config gracefully handles that.
 
+**Note**: The /static/ block is crucial. Since the Flask app runs at the root of its container, asking for CSS/JS from /generator/static/ will result in 404s. This config gracefully handles that.
+
+## Configuration (suggested)
 
 server {
     listen 8080;
