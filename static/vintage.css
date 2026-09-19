@@ -488,3 +488,74 @@ textarea {
     .header { flex-wrap: wrap; }
     .subtitle { margin-left: 0; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === ИЗМЕНЕНИЕ ЦВЕТА СТАТУСА (вместо зеленого - желтый) === */
+.status-ok { color: var(--accent2); }
+
+/* === ОКНО КОНСОЛИ === */
+.console-panel {
+    border: 1px solid var(--border);
+    border-top: none;
+    background: var(--bg2);
+    padding: 0 24px 20px;
+}
+.console-header {
+    padding: 16px 0 10px;
+    font-family: var(--display);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+}
+.console-log {
+    font-family: var(--mono);
+    font-size: 14px;
+    height: 220px;
+    overflow-y: auto;
+    background: var(--bg);
+    border: 1px solid var(--dim);
+    padding: 12px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-all;
+    user-select: text;
+    cursor: text;
+}
+/* Кастомный скроллбар для консоли */
+.console-log::-webkit-scrollbar { width: 8px; }
+.console-log::-webkit-scrollbar-track { background: var(--bg2); }
+.console-log::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 4px; }
+.console-log::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Цвета логов */
+.log-info { color: var(--text-dim); }
+.log-ok { color: var(--accent); }
+.log-warn { color: var(--warning); }
+.log-err { color: var(--danger); }
+.log-success { color: var(--accent2); }
+
+/* Убираем старый футер, он теперь не нужен */
+.footer { display: none; }
+

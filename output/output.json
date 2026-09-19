@@ -1,465 +1,393 @@
 [
   {
-    "age": 20,
-    "proxy": "socks5://162.252.55.156:1085",
+    "age": 28,
+    "proxy": "socks5://45.136.27.36:1085",
     "backupProxies": [
-      "socks5://216.40.75.178:1085",
-      "socks5://194.180.233.125:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "How to compare sustainable clothing prices across 100+ ethical brands",
-      "List of ethical clothing brands for student research",
-      "Best way to monitor sustainable fashion prices",
-      "Ethical brand price comparison for students",
-      "How to find legitimate consumer research resources for sustainable fashion"
-    ],
-    "intention": "sustainable comparing",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
-    "resolution": "5120x2880"
-  },
-  {
-    "age": 55,
-    "proxy": "socks5://45.147.232.203:1085",
-    "backupProxies": [
-      "socks5://31.134.4.172:1085",
-      "socks5://88.218.46.18:1085"
+      "socks5://194.180.233.93:1085",
+      "socks5://193.142.38.163:1085"
     ],
     "gender": "male",
     "interests": [
-      "How to optimize API sidecar proxy latency in Kubernetes",
-      "Best ways to reduce Istio latency for internal APIs",
-      "List of techniques for service mesh acceleration",
-      "How to achieve sub-2ms latency for internal APIs using sidecar proxy",
-      "Optimizing Kubernetes sidecar proxy for low-latency internal APIs"
+      "how to optimize dice betting strategies with statistical models",
+      "best way to use probability theory in btc gambling",
+      "list of effective statistical analysis methods for dice betting",
+      "how to apply statistical models to improve btc gambling outcomes",
+      "how to create a winning dice betting strategy using statistics"
     ],
-    "intention": "optimizing Kubernetes",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_16) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 22,
-    "proxy": "socks5://193.151.190.71:1085",
-    "backupProxies": [
-      "socks5://94.154.127.52:1085",
-      "socks5://45.133.113.198:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to find language learning materials for computational linguistics thesis",
-      "list of legitimate linguistics research resources",
-      "best way to scrape language learning resources",
-      "legitimate educational proxies for linguistics research",
-      "how to ensure ethical language data collection for thesis"
-    ],
-    "intention": "computational linguistics collecting",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/142.0",
+    "intention": "statistical strategies",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
     "resolution": "2560x1440"
   },
   {
-    "age": 38,
-    "proxy": "socks5://194.110.150.183:1085",
+    "age": 26,
+    "proxy": "socks5://167.253.17.120:1085",
     "backupProxies": [
-      "socks5://45.133.112.125:1085",
-      "socks5://212.18.113.159:1085"
+      "socks5://140.235.168.224:1085",
+      "socks5://162.252.52.189:1085"
     ],
-    "gender": "female",
+    "gender": "male",
     "interests": [
-      "how to optimize faceted navigation for 2M SKU retailer",
-      "best way to handle URL parameters for crawling",
-      "list of legitimate strategies to improve crawl efficiency in e-commerce",
-      "how to analyze faceted navigation crawl performance",
-      "best practices for crawl optimization in large e-commerce platforms"
+      "how to play crypto dice games",
+      "best NFT dice games for beginners",
+      "step-by-step guide to smart contract audits",
+      "testing decentralized dice platforms with own funds",
+      "how to create a decentralized dice platform"
     ],
-    "intention": "navigation efficiency",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
-    "resolution": "1920x1200"
-  },
-  {
-    "age": 47,
-    "proxy": "socks5://45.80.107.214:1085",
-    "backupProxies": [
-      "socks5://64.49.38.21:1085",
-      "socks5://199.96.164.60:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to collect air quality data",
-      "best ways to aggregate air quality data",
-      "list of environmental monitoring proxies",
-      "legitimate methods for climate research",
-      "how to use data for environmental justice"
-    ],
-    "intention": "environmental collecting research",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0",
+    "intention": "decentralized platforms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
     "resolution": "3840x1600"
   },
   {
-    "age": 46,
-    "proxy": "socks5://31.40.195.183:1085",
+    "age": 62,
+    "proxy": "socks5://45.136.24.226:1085",
     "backupProxies": [
-      "socks5://162.252.53.162:1085",
-      "socks5://88.218.46.220:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to analyze crowdfunding campaign data",
-      "top startup trends in crowdfunding",
-      "best ways to research legitimate crowdfunding investments",
-      "crowdfunding campaign success rate statistics",
-      "how to use crowdfunding data for investment research"
-    ],
-    "intention": "crowdfunding studying",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
-    "resolution": "4096x2304"
-  },
-  {
-    "age": 54,
-    "proxy": "socks5://185.94.32.242:1085",
-    "backupProxies": [
-      "socks5://77.83.27.218:1085",
-      "socks5://83.97.119.193:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to find legitimate B2B leads",
-      "best way to enrich lead database with company records",
-      "list of firmographic data sources for sales intelligence",
-      "B2B lead intelligence tools and proxies",
-      " ways to verify company data for sales prospecting"
-    ],
-    "intention": "intelligence enriching database",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_13) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.11 Safari/605.1.15",
-    "resolution": "5120x2160"
-  },
-  {
-    "age": 34,
-    "proxy": "socks5://83.97.118.38:1085",
-    "backupProxies": [
-      "socks5://31.134.5.33:1085",
-      "socks5://31.134.6.176:1085"
+      "socks5://89.19.34.199:1085",
+      "socks5://199.96.164.141:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to find competitor ads across 50+ exchanges",
-      "best way to monitor programmatic ads for agency",
-      "list of legitimate market research tools for proxies",
-      "comparing competitor ad strategies across exchanges",
-      "tracking competitor ad placements for media strategy"
+      "how to create passive income stream",
+      "best dividend stocks for 2026",
+      "alternatives to dividend investing",
+      "passive income generation strategies"
     ],
-    "intention": "competitor placements exchanges",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
-    "resolution": "3840x2160"
+    "intention": "comparable dividends",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600"
   },
   {
-    "age": 39,
-    "proxy": "socks5://193.202.16.166:1085",
+    "age": 40,
+    "proxy": "socks5://193.163.207.164:1085",
     "backupProxies": [
-      "socks5://89.19.34.248:1085",
-      "socks5://176.126.111.202:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "How to test enterprise failover systems using proxy rotation",
-      "Best practices for simulating regional outages in cloud testing",
-      "List of tools for cloud reliability testing with failover proxies",
-      "Most effective strategies for legitimate disaster recovery testing"
-    ],
-    "intention": "enterprise failover rotation",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5.1 Safari/605.1.15",
-    "resolution": "3440x1440"
-  },
-  {
-    "age": 41,
-    "proxy": "socks5://83.97.119.69:1085",
-    "backupProxies": [
-      "socks5://93.177.95.220:1085",
-      "socks5://31.134.5.74:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to compare 10 datacenter proxy providers for white-label reselling",
-      "best way to evaluate infrastructure pricing for proxy reselling",
-      "list of wholesale proxy endpoint management tools",
-      "large-scale proxy pool arbitrage strategies"
-    ],
-    "intention": "infrastructure opportunity datacenter",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
-    "resolution": "5120x2880"
-  },
-  {
-    "age": 33,
-    "proxy": "socks5://212.18.127.175:1085",
-    "backupProxies": [
-      "socks5://193.163.207.205:1085",
-      "socks5://194.180.236.104:1085"
+      "socks5://31.134.8.16:1085",
+      "socks5://31.134.0.59:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to validate API responses at proxy layer",
-      "best way to enforce schema in API responses",
-      "5ms API response validation methods",
-      "list of early fail-fast optimization techniques"
+      "how to gamble safely in 2026",
+      "best multi-sig wallet for gambling",
+      "list of casinos with board transparency",
+      "how to verify casino corporate governance",
+      "benefits of multi-sig wallets in online gambling"
     ],
-    "intention": "validation responses",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_9) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.8 Safari/605.1.15",
-    "resolution": "4096x2160"
-  },
-  {
-    "age": 25,
-    "proxy": "socks5://45.147.233.15:1085",
-    "backupProxies": [
-      "socks5://140.235.3.201:1085",
-      "socks5://193.163.89.75:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "best way to conduct academic research on DEX price efficiency",
-      "how to monitor DEX prices across different exchanges",
-      "how to use arbitrage for cryptocurrency research",
-      "list of legitimate trading study methods for DEX",
-      "how to analyze DEX price efficiency in academic research"
-    ],
-    "intention": "efficiency different exchanges",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/138.0.3351.0 Safari/537.36",
+    "intention": "transparency considering",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "5120x2880"
   },
   {
-    "age": 50,
-    "proxy": "socks5://212.119.40.61:1085",
+    "age": 45,
+    "proxy": "socks5://162.252.52.219:1085",
     "backupProxies": [
-      "socks5://91.132.198.139:1085",
-      "socks5://216.40.74.78:1085"
+      "socks5://45.147.235.163:1085",
+      "socks5://31.134.3.183:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to reduce api response sizes by 90% using field filtering proxy",
-      "best way to strip unused json fields in api responses",
-      "list of methods for api data transformation proxy",
-      "how to implement graphql-like filtering in api proxy"
+      "how to make contract enforceable in multiple jurisdictions",
+      "best way to draft multijurisdictional legal agreements",
+      "list of legal experts for cross-border disputes",
+      "how to draft jurisdiction clause for international contracts"
     ],
-    "intention": "filtering reducing",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/139.0",
+    "intention": "multijurisdictional unenforceable contract",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
     "resolution": "2560x1440"
   },
   {
-    "age": 42,
-    "proxy": "socks5://94.154.127.28:1085",
+    "age": 25,
+    "proxy": "socks5://91.132.125.185:1085",
     "backupProxies": [
-      "socks5://31.134.11.203:1085",
-      "socks5://45.136.26.160:1085"
+      "socks5://212.18.113.161:1085",
+      "socks5://167.253.16.218:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to collect public consumer trend data",
-      "list of consumer trend proxies",
-      "best way to aggregate market research data",
-      "legitimate business intelligence sources"
+      "How to enable Lightning Network instant payouts",
+      "List of cryptocurrencies with sub-10-second withdrawals",
+      "Best way to integrate withdrawal API access for real-time reinvestment"
     ],
-    "intention": "collecting legitimate",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/142.0.3598.0 Safari/537.36",
-    "resolution": "5120x2160"
-  },
-  {
-    "age": 65,
-    "proxy": "socks5://45.145.131.38:1085",
-    "backupProxies": [
-      "socks5://199.96.166.99:1085",
-      "socks5://193.202.16.161:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to find free estate planning templates",
-      "best way to create a will for senior citizens",
-      "list of legal aid clinics offering estate planning services"
-    ],
-    "intention": "collecting templates",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
+    "intention": "reinvestment automating extraction",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
     "resolution": "2560x1440"
   },
   {
     "age": 24,
-    "proxy": "socks5://45.10.167.223:1085",
+    "proxy": "socks5://31.134.3.215:1085",
     "backupProxies": [
-      "socks5://91.246.51.178:1085",
-      "socks5://194.99.25.59:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to scrape remote job boards for data",
-      "list of digital nomad resources for research",
-      "best way to collect legitimate remote employment data",
-      "remote work statistics research methods",
-      "how to analyze remote job data by geography"
-    ],
-    "intention": "collecting geography research",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/144.0",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 79,
-    "proxy": "socks5://94.154.127.88:1085",
-    "backupProxies": [
-      "socks5://140.235.3.232:1085",
-      "socks5://192.101.66.70:1085"
+      "socks5://45.145.128.198:1085",
+      "socks5://45.145.129.97:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to find affordable dental care for seniors",
-      "best dental plans for low-income seniors",
-      "how to compare dental care costs",
-      "list of dental care options for low-income seniors",
-      "how to ensure good oral health for seniors on a budget"
+      "how to change wallet address for whitelisting",
+      "list of platforms with strict destination controls",
+      "best way to recover stolen cryptocurrency",
+      "how to set pre-registered payout destinations",
+      "how to bypass change-request cooldowns"
     ],
-    "intention": "researching affordable options",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0",
-    "resolution": "5120x2160"
+    "intention": "destination withdrawal platforms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080"
   },
   {
-    "age": 45,
-    "proxy": "socks5://31.134.7.173:1085",
+    "age": 77,
+    "proxy": "socks5://185.94.35.212:1085",
     "backupProxies": [
-      "socks5://77.83.26.175:1085",
-      "socks5://162.252.54.98:1085"
+      "socks5://91.132.125.47:1085",
+      "socks5://31.134.5.158:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to detect redirect chain proxies at scale",
-      "best way to monitor link equity during site migration",
-      "steps to ensure legitimate site migration QA for 500k URLs",
-      "how to audit redirect chains for site migration in WordPress",
-      "list of tools for checking redirect chains in bulk"
+      "how to make money with bitcoin gambling",
+      "best ways to monetize a hobby",
+      "senior entrepreneurship strategies",
+      "turning a hobby into a successful business"
     ],
-    "intention": "publishing migration",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/135.0.3179.0 Safari/537.36",
+    "intention": "gambling turning",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "3840x2160"
   },
   {
-    "age": 80,
-    "proxy": "socks5://185.94.32.159:1085",
+    "age": 40,
+    "proxy": "socks5://212.87.216.142:1085",
     "backupProxies": [
-      "socks5://62.204.49.130:1085",
-      "socks5://91.132.125.18:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to find clinical trials for age-related conditions",
-      "legitimate clinical trials for seniors",
-      "list of age-related clinical trials",
-      "best way to match senior citizens with clinical trials",
-      "how to conduct elder health research at senior centers"
-    ],
-    "intention": "conditions clinical",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0",
-    "resolution": "3440x1440"
-  },
-  {
-    "age": 54,
-    "proxy": "socks5://45.147.233.218:1085",
-    "backupProxies": [
-      "socks5://193.163.207.164:1085",
-      "socks5://194.110.150.33:1085"
+      "socks5://199.96.165.194:1085",
+      "socks5://45.80.107.175:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to digitize historical newspapers",
-      "list of public domain newspaper archives",
-      "best way to preserve cultural heritage digitally",
-      "free tools for newspaper digitization",
-      "how to make historical newspapers accessible online"
+      "how to gamble safely in 2026",
+      "best multi-sig wallet for gambling",
+      "list of casinos with board transparency",
+      "how to verify casino corporate governance",
+      "benefits of multi-sig wallets in online gambling"
     ],
-    "intention": "digitizing historical",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
-    "resolution": "3840x2160"
+    "intention": "transparency considering savings",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880"
   },
   {
-    "age": 33,
-    "proxy": "socks5://167.253.18.103:1085",
+    "age": 28,
+    "proxy": "socks5://194.104.8.243:1085",
     "backupProxies": [
-      "socks5://31.134.6.168:1085",
-      "socks5://45.147.232.232:1085"
+      "socks5://31.134.11.40:1085",
+      "socks5://212.18.127.99:1085"
     ],
     "gender": "female",
     "interests": [
-      "local service price comparison",
-      "home services transparency proxies",
-      "legitimate consumer tool"
+      "how to create gender inclusive design in crypto gambling platforms",
+      "best practices for non-stereotypical themes in crypto gambling",
+      "list of modern aesthetic design trends for crypto gambling platforms",
+      "how to ensure accessibility and inclusivity in crypto gambling UI design",
+      "top ways to improve the aesthetic appeal of crypto gambling platforms"
     ],
-    "intention": "transparency consumers",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/140.0",
-    "resolution": "4096x2304"
-  },
-  {
-    "age": 50,
-    "proxy": "socks5://185.77.220.119:1085",
-    "backupProxies": [
-      "socks5://193.151.190.240:1085",
-      "socks5://31.134.1.195:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to reduce api response sizes by 90% using field filtering proxy",
-      "best way to strip unused json fields in api responses",
-      "list of methods for api data transformation proxy",
-      "how to implement graphql-like filtering in api proxy"
-    ],
-    "intention": "filtering reducing response",
-    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/139.0",
+    "intention": "supporting aesthetics platforms",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
     "resolution": "2560x1440"
-  },
-  {
-    "age": 20,
-    "proxy": "socks5://31.134.15.51:1085",
-    "backupProxies": [
-      "socks5://45.80.107.175:1085",
-      "socks5://45.136.24.41:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to aggregate internship boards",
-      "legitimate student job tools",
-      "best way to proxy rotate for job research",
-      "how to optimize career opportunity research"
-    ],
-    "intention": "internship aggregator university",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 42,
-    "proxy": "socks5://45.147.232.29:1085",
-    "backupProxies": [
-      "socks5://193.163.92.152:1085",
-      "socks5://140.235.171.65:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to collect public consumer trend data",
-      "list of consumer trend proxies",
-      "best way to aggregate market research data",
-      "legitimate business intelligence sources"
-    ],
-    "intention": "collecting legitimate",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/142.0.3598.0 Safari/537.36",
-    "resolution": "5120x2160"
   },
   {
     "age": 31,
-    "proxy": "socks5://77.83.26.54:1085",
+    "proxy": "socks5://91.132.124.47:1085",
     "backupProxies": [
-      "socks5://140.235.168.150:1085",
-      "socks5://46.253.131.177:1085"
+      "socks5://193.202.16.92:1085",
+      "socks5://45.141.128.74:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to play BTC crash dice",
+      "list of dice game variants for BTC",
+      "best way to use custom multipliers in BTC dice",
+      "where to find BTC dice crash hybrids",
+      "how to optimize BTC dice strategy"
+    ],
+    "intention": "exploring mechanics",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 53,
+    "proxy": "socks5://185.94.35.227:1085",
+    "backupProxies": [
+      "socks5://62.204.49.123:1085",
+      "socks5://45.147.11.39:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to set up social listening for brand mentions",
-      "best tools for monitoring Fortune 500 brand sentiment",
-      "legitimate ways to check brand reputation on social media",
-      "how to find clean proxies for social listening",
-      "list of reliable social media monitoring services"
+      "how to bridge income gap during career re-entry",
+      "best legitimate ways to make money online",
+      "list of high paying online jobs",
+      "best way to supplement income during career break",
+      "how to start a side business while job hunting"
     ],
-    "intention": "monitoring platforms mentions",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "intention": "bridging income during",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600"
+  },
+  {
+    "age": 55,
+    "proxy": "socks5://91.246.51.178:1085",
+    "backupProxies": [
+      "socks5://93.177.94.211:1085",
+      "socks5://194.110.150.153:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to verify annual payout integrity reports",
+      "best way to request external auditor attestations",
+      "process of conducting fraud detection transparency",
+      "list of system glitches and root causes",
+      "how to publish incident root cause analyses"
+    ],
+    "intention": "published incident",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600"
+  },
+  {
+    "age": 36,
+    "proxy": "socks5://212.18.113.254:1085",
+    "backupProxies": [
+      "socks5://31.40.195.19:1085",
+      "socks5://45.145.128.53:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to document true cost of play in gambling",
+      "best way to find transparent fee structures",
+      "list of hidden fees in online gambling",
+      "how to analyze hidden costs in gambling",
+      "how to compare network fees in online gambling"
+    ],
+    "intention": "documenting including",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "resolution": "2560x1600"
+  },
+  {
+    "age": 36,
+    "proxy": "socks5://193.163.92.141:1085",
+    "backupProxies": [
+      "socks5://45.133.113.124:1085",
+      "socks5://192.101.67.120:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "How to build a gaming PC",
+      "Best gaming headsets",
+      "Home theater setup for gaming",
+      "Ideal gaming room lighting",
+      "Creating a gaming cave on a budget"
+    ],
+    "intention": "entertainment environment creating",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.0.0 Safari/537.36",
+    "resolution": "5120x1440"
+  },
+  {
+    "age": 76,
+    "proxy": "socks5://193.151.190.36:1085",
+    "backupProxies": [
+      "socks5://192.101.65.156:1085",
+      "socks5://199.96.167.62:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to withdraw bitcoins with human review",
+      "best way to avoid AI-only BTC withdrawal rejections",
+      "how to escalate BTC withdrawal issues via phone",
+      "top Bitcoin platforms with senior compliance teams"
+    ],
+    "intention": "prioritizes compliance platforms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "1920x1080"
+  },
+  {
+    "age": 40,
+    "proxy": "socks5://140.235.2.183:1085",
+    "backupProxies": [
+      "socks5://45.147.233.227:1085",
+      "socks5://162.252.53.113:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to gamble safely in 2026",
+      "best multi-sig wallet for gambling",
+      "list of casinos with board transparency",
+      "how to verify casino corporate governance",
+      "benefits of multi-sig wallets in online gambling"
+    ],
+    "intention": "transparency considering",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "5120x2880"
+  },
+  {
+    "age": 31,
+    "proxy": "socks5://45.147.232.81:1085",
+    "backupProxies": [
+      "socks5://89.19.34.174:1085",
+      "socks5://212.18.127.48:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to stream high-stakes dice games",
+      "best platforms for gambling live streams",
+      "setting up live streaming equipment for dice games",
+      "creating content for a gambling audience",
+      "how to attract viewers to my dice game live stream"
+    ],
+    "intention": "streaming sessions gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 30,
+    "proxy": "socks5://199.96.166.61:1085",
+    "backupProxies": [
+      "socks5://193.151.190.226:1085",
+      "socks5://31.134.1.252:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "How to find trusted online casinos with sub-60-second BTC payouts",
+      "List of casinos supporting instant Bitcoin withdrawals",
+      "Best way to use Lightning Network for gambling",
+      "Fastest Bitcoin payout casinos",
+      "Instant Bitcoin withdrawal casinos ranking"
+    ],
+    "intention": "prioritizing casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "resolution": "1920x1080"
+  },
+  {
+    "age": 27,
+    "proxy": "socks5://45.10.167.203:1085",
+    "backupProxies": [
+      "socks5://185.77.220.29:1085",
+      "socks5://194.180.232.143:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to test non-English interfaces for global usability",
+      "list of localization tools",
+      "best way to implement multi-language support",
+      "how to ensure localization accuracy in crypto gambling apps"
+    ],
+    "intention": "interfaces usability testing",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 40,
+    "proxy": "socks5://185.212.115.133:1085",
+    "backupProxies": [
+      "socks5://91.247.163.77:1085",
+      "socks5://45.136.24.205:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to identify trusted online gambling platforms",
+      "best way to check for responsible gambling certifications",
+      "list of IBAS certified online casinos",
+      "how to ensure independent dispute resolution in online casinos"
+    ],
+    "intention": "prioritizing independent",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "resolution": "2560x1600"
   }
 ]

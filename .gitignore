@@ -6,6 +6,7 @@ llm7.io.txt
 stats/
 
 # Игнорируем содержимое папок, но оставляем сами папки
+output/*
 proxy/*
 !proxy/.gitkeep
 

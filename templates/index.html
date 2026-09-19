@@ -149,6 +149,7 @@
         <textarea id="outputArea" readonly spellcheck="false"></textarea>
     </div>
 
+<!--
     <div class="footer">
         <span>TARJA.DRACH.PRO // GENERATOR MODULE</span>
         <div class="footer-right">
@@ -156,6 +157,17 @@
             <span class="footer-llm" id="footerLlm" style="display:none;"></span>
         </div>
     </div>
+-->
+
+    <div class="console-panel">
+        <div class="console-header">
+            <span>[ SYSTEM LOG ]</span>
+            <button class="btn-small" onclick="clearConsole()">[ CLEAR ]</button>
+        </div>
+        <div class="console-log" id="consoleLog" readonly></div>
+    </div>
+
+
 
 </div>
 
@@ -256,6 +268,55 @@
     document.getElementById('max_reuse').addEventListener('input', loadStats);
     window.addEventListener('DOMContentLoaded', loadStats);
 
+
+
+
+
+
+
+
+
+
+    // --- ПЕРЕМЕННЫЕ ДЛЯ СПИННЕРА ---
+    let _spinnerInterval = null;
+    let _spinnerIdx = 0;
+    const _spinnerChars = ['\\', '|', '/', '-'];
+    let _currentGen = 0;
+    let _totalGen = 0;
+
+    function startSpinner() {
+        _spinnerIdx = 0;
+        _currentGen = 0;
+        _totalGen = 0;
+        const consoleEl = document.getElementById('consoleLog');
+        let progLine = document.getElementById('progress-line');
+        if (!progLine) {
+            progLine = document.createElement('div');
+            progLine.id = 'progress-line';
+            progLine.className = 'log-info';
+            consoleEl.appendChild(progLine);
+        }
+        // Крутим спиннер каждые 150мс
+        _spinnerInterval = setInterval(() => {
+            const spin = _spinnerChars[_spinnerIdx % _spinnerChars.length];
+            _spinnerIdx++;
+            progLine.innerHTML = `> Generating Profiles [ <span style="color:var(--accent2)">${spin}</span> ] ${_currentGen} / ${_totalGen}`;
+            consoleEl.scrollTop = consoleEl.scrollHeight;
+        }, 150);
+    }
+
+    function updateSpinnerProgress(current, total) {
+        _currentGen = current;
+        _totalGen = total;
+    }
+
+    function stopSpinner() {
+        clearInterval(_spinnerInterval);
+        const progLine = document.getElementById('progress-line');
+        if (progLine) progLine.remove();
+    }
+
+    // --- ОСНОВНАЯ ФУНКЦИЯ ГЕНЕРАЦИИ ---
     async function doGenerate() {
         const btn    = document.getElementById('btnGenerate');
         const count  = parseInt(document.getElementById('count').value) || 0;
@@ -264,7 +325,10 @@
 
         btn.disabled = true;
         showStatus('info', 'Synthesizing profiles\u2026');
-        updateRealProgress(0); // Сброс прогресс-бара
+        updateRealProgress(0);
+        
+        // Запускаем спиннер сразу!
+        startSpinner();
 
         const body = {
             proxy_file:       document.getElementById('proxy_file').value,
@@ -287,6 +351,7 @@
             });
 
             if (!resp.ok) {
+                stopSpinner(); // Останавливаем спиннер при ошибке
                 const text = await resp.text();
                 let msg = 'Server error ' + resp.status;
                 try {
@@ -296,7 +361,7 @@
                     msg += ' (not JSON)';
                 }
                 showStatus('err', '\u2716 ' + msg);
-                stopProgress(false);
+                appendLog('err', '> Server Error: ' + msg);
                 btn.disabled = false;
                 return;
             }
@@ -312,7 +377,7 @@
 
                 buffer += decoder.decode(value, { stream: true });
                 const events = buffer.split('\n\n');
-                buffer = events.pop(); // Оставляем последний незавершенный кусок
+                buffer = events.pop();
 
                 for (const eventStr of events) {
                     if (eventStr.startsWith('data: ')) {
@@ -320,13 +385,15 @@
                         try {
                             const data = JSON.parse(jsonStr);
 
-                            // Обработка прогресса
+                            // Обработка прогресса (обновляем только цифры)
                             if (data.type === 'progress') {
                                 const percent = Math.round((data.current / data.total) * 100);
                                 updateRealProgress(percent);
+                                updateSpinnerProgress(data.current, data.total);
                             }
                             // Обработка финального результата
                             else if (data.type === 'complete') {
+                                stopSpinner(); // Убираем строку спиннера
                                 stopProgress(true);
                                 
                                 const out = document.getElementById('outputArea');
@@ -340,17 +407,17 @@
                                 showStatus(isWarn ? 'warn' : 'ok',
                                     (isWarn ? '\u26A0 ' : '\u2714 ') + (data.message || 'Done'));
 
-                                document.getElementById('footerStats').textContent =
-                                    'GENERATED: ' + data.profiles.length + ' PROFILES';
-
-                                const llmCount = data.stats && data.stats.llm_modified_count;
-                                const llmEl = document.getElementById('footerLlm');
-                                if (llmCount !== undefined && llmCount > 0) {
-                                    llmEl.textContent = 'LLM MODIFIED: ' + llmCount;
-                                    llmEl.style.display = 'inline';
-                                } else {
-                                    llmEl.style.display = 'none';
+                                // Выводим итоговую статистику
+                                appendLog('success', `>> ${data.message}`);
+                                appendLog('ok', `>> Total Profiles: ${data.stats.total_profiles}`);
+                                appendLog('ok', `>> Unique Main Proxies: ${data.stats.unique_main_proxies}`);
+                                if (data.stats.llm_modified_count !== undefined) {
+                                    appendLog('ok', `>> LLM Modified: ${data.stats.llm_modified_count}`);
                                 }
+                            }
+                            // Обработка логов (ошибки LLM)
+                            else if (data.type === 'log') {
+                                appendLog(data.level || 'info', data.text);
                             }
                         } catch (e) {
                             console.error("Parse error:", e, jsonStr);
@@ -360,22 +427,40 @@
             }
 
         } catch(e) {
+            stopSpinner();
             stopProgress(false);
             showStatus('err', '\u2716 Network error: ' + e.message);
+            appendLog('err', '> Network Error: ' + e.message);
         }
 
         btn.disabled = false;
         loadStats();
     }
 
+    // --- ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ---
     function showStatus(type, msg) {
         const el = document.getElementById('statusLine');
+        // Принудительно делаем галочку желтой
+        const cleanMsg = msg.replace(/\u2714/g, '\u2714\uFE0E');
+        
         const cls = { ok: 'status-ok', warn: 'status-warn', err: 'status-err', info: '' }[type] || '';
-        el.innerHTML = '<span class="' + cls + '">' + msg + '</span>' +
+        el.innerHTML = '<span class="' + cls + '">' + cleanMsg + '</span>' +
             (type === 'info' ? '<span class="cursor-blink"></span>' : '');
     }
 
-    // --- НОВЫЕ ФУНКЦИИ ПРОГРЕСС-БАРА ---
+    function appendLog(level, text) {
+        const consoleEl = document.getElementById('consoleLog');
+        const line = document.createElement('div');
+        line.className = 'log-' + level;
+        line.textContent = text;
+        consoleEl.appendChild(line);
+        consoleEl.scrollTop = consoleEl.scrollHeight;
+    }
+
+    function clearConsole() {
+        document.getElementById('consoleLog').innerHTML = '';
+    }
+
     function updateRealProgress(percent) {
         const wrap = document.getElementById('progressWrap');
         const bar  = document.getElementById('progressBar');
@@ -391,7 +476,7 @@
         setTimeout(() => {
             wrap.classList.remove('visible');
             bar.style.background = '';
-            bar.style.width = '0%'; // Сброс для след. запуска
+            bar.style.width = '0%';
         }, 1500);
     }
 
@@ -426,6 +511,8 @@
         URL.revokeObjectURL(url);
         showStatus('ok', '\u2714 File saved');
     }
+    
+
 </script>
 </body>
 </html>

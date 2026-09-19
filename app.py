@@ -182,17 +182,16 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
     if llm_provider == "mistral":
         if not MISTRAL_KEYS:
             print("Ошибка: Список ключей mistral.txt пуст!")
-            return interests, False
+            return interests, False, "Ошибка: Список ключей mistral.txt пуст!"
         api_url = MISTRAL_API_URL
         model = MISTRAL_MODEL
         keys_to_try = MISTRAL_KEYS * 2 if len(MISTRAL_KEYS) > 1 else MISTRAL_KEYS
     else: # По умолчанию используем LLM7
         if not LLM7_KEYS:
             print("Ошибка: Список ключей llm7.io.txt пуст!")
-            return interests, False
+            return interests, False, "Ошибка: Список ключей llm7.io.txt пуст!"
         api_url = LLM7_API_URL
         model = LLM7_MODEL
-        # ИСПРАВЛЕНО: Умножаем на 2, чтобы сделать 2 попытки даже с 1 ключом
         keys_to_try = LLM7_KEYS * 2 if len(LLM7_KEYS) > 1 else LLM7_KEYS
 
     system_prompt = (
@@ -218,6 +217,7 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
     }
 
     attempts_allowed = 2
+    last_error = None
 
     for i, key in enumerate(keys_to_try):
         if i >= attempts_allowed:
@@ -244,16 +244,17 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
                     MISTRAL_KEYS.append(MISTRAL_KEYS.pop(0))
                 elif llm_provider == "llm7" and len(LLM7_KEYS) > 1:
                     LLM7_KEYS.append(LLM7_KEYS.pop(0))
-                return modified, True
+                return modified, True, None
             else:
                 raise ValueError("LLM returned not a list")
 
         except Exception as e:
-            print(f"[{llm_provider.upper()}] Попытка {i+1} с ключом ...{key[-4:]} провалилась: {e}")
+            last_error = f"[{llm_provider.upper()}] Key ...{key[-4:]} failed: {e}"
             continue
 
-    print(f"[{llm_provider.upper()}] Все попытки исчерпаны. Оставляем interests как есть.")
-    return interests, False
+    fail_msg = f"[{llm_provider.upper()}] All attempts exhausted. Interests kept as is. Last error: {last_error}"
+    print(fail_msg)
+    return interests, False, fail_msg
 
 # ==============================================================================
 # [ WEB-ИНТЕРФЕЙС ]
@@ -484,7 +485,7 @@ def generate():
 
             # --- Логика модификации и усечения ---
             if modify_int:
-                new_interests, was_modified = modify_interests_with_llm(
+                new_interests, was_modified, err_msg = modify_interests_with_llm(
                     valid_template.get('intention', ''),
                     valid_template.get('interests', []),
                     llm_provider=llm_provider
@@ -492,6 +493,14 @@ def generate():
                 valid_template['interests'] = new_interests
                 if was_modified:
                     llm_modified_count += 1
+                else:
+                    # Отправляем лог с ошибкой в консоль браузера
+                    log_data = {
+                        "type": "log",
+                        "level": "err",
+                        "text": err_msg
+                    }
+                    yield f"data: {json.dumps(log_data)}\n\n"
 
             if shrink_int:
                 valid_template['intention'] = shrink_intention_python(valid_template.get('intention', ''))
