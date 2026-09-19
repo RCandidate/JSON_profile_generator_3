@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <title>Generator - Brand-New Life</title>
@@ -14,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 <div class="terminal-wrapper">
@@ -152,7 +150,7 @@
     </div>
 
     <div class="footer">
-        <span>YOUR_DOMAIN_NAME // GENERATOR MODULE</span>
+        <span>TARJA.DRACH.PRO // GENERATOR MODULE</span>
         <div class="footer-right">
             <span class="footer-accent" id="footerStats">READY</span>
             <span class="footer-llm" id="footerLlm" style="display:none;"></span>
@@ -266,7 +264,7 @@
 
         btn.disabled = true;
         showStatus('info', 'Synthesizing profiles\u2026');
-        animateProgress();
+        updateRealProgress(0); // Сброс прогресс-бара
 
         const body = {
             proxy_file:       document.getElementById('proxy_file').value,
@@ -288,8 +286,6 @@
                 body:    JSON.stringify(body)
             });
 
-            stopProgress(resp.ok);
-
             if (!resp.ok) {
                 const text = await resp.text();
                 let msg = 'Server error ' + resp.status;
@@ -300,32 +296,67 @@
                     msg += ' (not JSON)';
                 }
                 showStatus('err', '\u2716 ' + msg);
+                stopProgress(false);
                 btn.disabled = false;
                 return;
             }
 
-            const data = await resp.json();
-            const out  = document.getElementById('outputArea');
-            out.value  = JSON.stringify(data.profiles, null, 2);
+            // Чтение потока SSE
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
 
-            const panel = document.getElementById('resultPanel');
-            panel.classList.add('visible');
-            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
 
-            const isWarn = data.message && data.message.startsWith('WARNING');
-            showStatus(isWarn ? 'warn' : 'ok',
-                (isWarn ? '\u26A0 ' : '\u2714 ') + (data.message || 'Done'));
+                buffer += decoder.decode(value, { stream: true });
+                const events = buffer.split('\n\n');
+                buffer = events.pop(); // Оставляем последний незавершенный кусок
 
-            document.getElementById('footerStats').textContent =
-                'GENERATED: ' + data.profiles.length + ' PROFILES';
+                for (const eventStr of events) {
+                    if (eventStr.startsWith('data: ')) {
+                        const jsonStr = eventStr.substring(6);
+                        try {
+                            const data = JSON.parse(jsonStr);
 
-            const llmCount = data.stats && data.stats.llm_modified_count;
-            const llmEl = document.getElementById('footerLlm');
-            if (llmCount !== undefined && llmCount > 0) {
-                llmEl.textContent = 'LLM MODIFIED: ' + llmCount;
-                llmEl.style.display = 'inline';
-            } else {
-                llmEl.style.display = 'none';
+                            // Обработка прогресса
+                            if (data.type === 'progress') {
+                                const percent = Math.round((data.current / data.total) * 100);
+                                updateRealProgress(percent);
+                            }
+                            // Обработка финального результата
+                            else if (data.type === 'complete') {
+                                stopProgress(true);
+                                
+                                const out = document.getElementById('outputArea');
+                                out.value = JSON.stringify(data.profiles, null, 2);
+
+                                const panel = document.getElementById('resultPanel');
+                                panel.classList.add('visible');
+                                panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                                const isWarn = data.message && (data.message.startsWith('WARNING') || data.message.startsWith('Not enough'));
+                                showStatus(isWarn ? 'warn' : 'ok',
+                                    (isWarn ? '\u26A0 ' : '\u2714 ') + (data.message || 'Done'));
+
+                                document.getElementById('footerStats').textContent =
+                                    'GENERATED: ' + data.profiles.length + ' PROFILES';
+
+                                const llmCount = data.stats && data.stats.llm_modified_count;
+                                const llmEl = document.getElementById('footerLlm');
+                                if (llmCount !== undefined && llmCount > 0) {
+                                    llmEl.textContent = 'LLM MODIFIED: ' + llmCount;
+                                    llmEl.style.display = 'inline';
+                                } else {
+                                    llmEl.style.display = 'none';
+                                }
+                            }
+                        } catch (e) {
+                            console.error("Parse error:", e, jsonStr);
+                        }
+                    }
+                }
             }
 
         } catch(e) {
@@ -344,27 +375,24 @@
             (type === 'info' ? '<span class="cursor-blink"></span>' : '');
     }
 
-    let _progTimer = null;
-    function animateProgress() {
+    // --- НОВЫЕ ФУНКЦИИ ПРОГРЕСС-БАРА ---
+    function updateRealProgress(percent) {
         const wrap = document.getElementById('progressWrap');
         const bar  = document.getElementById('progressBar');
         wrap.classList.add('visible');
-        bar.style.width = '0%';
-        let w = 0;
-        _progTimer = setInterval(() => {
-            w = Math.min(w + Math.random() * 8, 88);
-            bar.style.width = w + '%';
-        }, 200);
+        bar.style.width = percent + '%';
     }
+
     function stopProgress(success) {
-        clearInterval(_progTimer);
-        const bar = document.getElementById('progressBar');
+        const wrap = document.getElementById('progressWrap');
+        const bar  = document.getElementById('progressBar');
         bar.style.width = success ? '100%' : '0%';
         if (!success) bar.style.background = 'var(--danger)';
         setTimeout(() => {
-            document.getElementById('progressWrap').classList.remove('visible');
+            wrap.classList.remove('visible');
             bar.style.background = '';
-        }, 600);
+            bar.style.width = '0%'; // Сброс для след. запуска
+        }, 1500);
     }
 
     function doCopy() {

@@ -1,190 +1,465 @@
 [
   {
-    "age": 38,
-    "proxy": "socks5://193.163.207.237:1085",
+    "age": 20,
+    "proxy": "socks5://162.252.55.156:1085",
     "backupProxies": [
-      "socks5://199.96.167.219:1085",
-      "socks5://167.253.19.138:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to apply for loan with itin",
-      "best way to get loan as permanent resident",
-      "list of loans for recent immigrants with thin credit",
-      "how to improve credit score for loan approval",
-      "non-citizen loan requirements"
-    ],
-    "intention": "permanent resident",
-    "useragent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 48,
-    "proxy": "socks5://45.147.232.150:1085",
-    "backupProxies": [
-      "socks5://64.49.37.183:1085",
-      "socks5://176.126.111.43:1085"
+      "socks5://216.40.75.178:1085",
+      "socks5://194.180.233.125:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to finance unexpected medical bills without credit card",
-      "list of medical expense loans",
-      "best way to pay for medical procedures",
-      "healthcare financing options without high interest",
-      "procedure payment plans comparison"
+      "How to compare sustainable clothing prices across 100+ ethical brands",
+      "List of ethical clothing brands for student research",
+      "Best way to monitor sustainable fashion prices",
+      "Ethical brand price comparison for students",
+      "How to find legitimate consumer research resources for sustainable fashion"
     ],
-    "intention": "unexpected interest looking",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-    "resolution": "2560x1600"
+    "intention": "sustainable comparing",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "5120x2880"
   },
   {
     "age": 55,
-    "proxy": "socks5://64.49.36.196:1085",
+    "proxy": "socks5://45.147.232.203:1085",
     "backupProxies": [
-      "socks5://45.147.11.213:1085",
-      "socks5://45.141.128.12:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to apply for chronic illness loan",
-      "best way to manage medication costs",
-      "list of financial assistance programs for chronic illness",
-      "how to get help paying for ongoing treatment",
-      "how to find affordable health insurance for chronic conditions"
-    ],
-    "intention": "medications condition declining",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-    "resolution": "2560x1600"
-  },
-  {
-    "age": 49,
-    "proxy": "socks5://199.96.165.44:1085",
-    "backupProxies": [
-      "socks5://37.72.141.240:1085",
-      "socks5://166.88.178.42:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to get a loan as a freelancer with bad credit",
-      "best way to secure a loan as a gig worker",
-      "list of freelancer income loan options",
-      "how to qualify for a loan as a self-employed graphic designer",
-      "how to improve my credit score to get a loan as a freelancer"
-    ],
-    "intention": "freelance irregular designer",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-    "resolution": "3000x2000"
-  },
-  {
-    "age": 35,
-    "proxy": "socks5://162.252.52.83:1085",
-    "backupProxies": [
-      "socks5://140.235.170.178:1085",
-      "socks5://185.94.33.151:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to get immediate cash loan before payday",
-      "best payday loans online for rent",
-      "emergency cash advance options today",
-      "how to get a short term loan with bad credit",
-      "list of no credit check loans for rent"
-    ],
-    "intention": "immediate paycheck",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
-    "resolution": "2560x1600"
-  },
-  {
-    "age": 38,
-    "proxy": "socks5://167.253.18.103:1085",
-    "backupProxies": [
-      "socks5://45.80.106.140:1085",
-      "socks5://140.235.168.55:1085"
+      "socks5://31.134.4.172:1085",
+      "socks5://88.218.46.18:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to compare loan offers",
-      "APR calculator tool",
-      "best way to check lender credibility",
-      "list of predatory lending practices to avoid",
-      "how to negotiate lower loan fees"
+      "How to optimize API sidecar proxy latency in Kubernetes",
+      "Best ways to reduce Istio latency for internal APIs",
+      "List of techniques for service mesh acceleration",
+      "How to achieve sub-2ms latency for internal APIs using sidecar proxy",
+      "Optimizing Kubernetes sidecar proxy for low-latency internal APIs"
     ],
-    "intention": "researching predatory practices",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "intention": "optimizing Kubernetes",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_16) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15",
+    "resolution": "1920x1080"
+  },
+  {
+    "age": 22,
+    "proxy": "socks5://193.151.190.71:1085",
+    "backupProxies": [
+      "socks5://94.154.127.52:1085",
+      "socks5://45.133.113.198:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to find language learning materials for computational linguistics thesis",
+      "list of legitimate linguistics research resources",
+      "best way to scrape language learning resources",
+      "legitimate educational proxies for linguistics research",
+      "how to ensure ethical language data collection for thesis"
+    ],
+    "intention": "computational linguistics collecting",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/142.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 38,
+    "proxy": "socks5://194.110.150.183:1085",
+    "backupProxies": [
+      "socks5://45.133.112.125:1085",
+      "socks5://212.18.113.159:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to optimize faceted navigation for 2M SKU retailer",
+      "best way to handle URL parameters for crawling",
+      "list of legitimate strategies to improve crawl efficiency in e-commerce",
+      "how to analyze faceted navigation crawl performance",
+      "best practices for crawl optimization in large e-commerce platforms"
+    ],
+    "intention": "navigation efficiency",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "resolution": "1920x1200"
+  },
+  {
+    "age": 47,
+    "proxy": "socks5://45.80.107.214:1085",
+    "backupProxies": [
+      "socks5://64.49.38.21:1085",
+      "socks5://199.96.164.60:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to collect air quality data",
+      "best ways to aggregate air quality data",
+      "list of environmental monitoring proxies",
+      "legitimate methods for climate research",
+      "how to use data for environmental justice"
+    ],
+    "intention": "environmental collecting research",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0",
+    "resolution": "3840x1600"
+  },
+  {
+    "age": 46,
+    "proxy": "socks5://31.40.195.183:1085",
+    "backupProxies": [
+      "socks5://162.252.53.162:1085",
+      "socks5://88.218.46.220:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to analyze crowdfunding campaign data",
+      "top startup trends in crowdfunding",
+      "best ways to research legitimate crowdfunding investments",
+      "crowdfunding campaign success rate statistics",
+      "how to use crowdfunding data for investment research"
+    ],
+    "intention": "crowdfunding studying",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
+    "resolution": "4096x2304"
+  },
+  {
+    "age": 54,
+    "proxy": "socks5://185.94.32.242:1085",
+    "backupProxies": [
+      "socks5://77.83.27.218:1085",
+      "socks5://83.97.119.193:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to find legitimate B2B leads",
+      "best way to enrich lead database with company records",
+      "list of firmographic data sources for sales intelligence",
+      "B2B lead intelligence tools and proxies",
+      " ways to verify company data for sales prospecting"
+    ],
+    "intention": "intelligence enriching database",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_13) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.11 Safari/605.1.15",
+    "resolution": "5120x2160"
+  },
+  {
+    "age": 34,
+    "proxy": "socks5://83.97.118.38:1085",
+    "backupProxies": [
+      "socks5://31.134.5.33:1085",
+      "socks5://31.134.6.176:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to find competitor ads across 50+ exchanges",
+      "best way to monitor programmatic ads for agency",
+      "list of legitimate market research tools for proxies",
+      "comparing competitor ad strategies across exchanges",
+      "tracking competitor ad placements for media strategy"
+    ],
+    "intention": "competitor placements exchanges",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 39,
+    "proxy": "socks5://193.202.16.166:1085",
+    "backupProxies": [
+      "socks5://89.19.34.248:1085",
+      "socks5://176.126.111.202:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "How to test enterprise failover systems using proxy rotation",
+      "Best practices for simulating regional outages in cloud testing",
+      "List of tools for cloud reliability testing with failover proxies",
+      "Most effective strategies for legitimate disaster recovery testing"
+    ],
+    "intention": "enterprise failover rotation",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5.1 Safari/605.1.15",
+    "resolution": "3440x1440"
+  },
+  {
+    "age": 41,
+    "proxy": "socks5://83.97.119.69:1085",
+    "backupProxies": [
+      "socks5://93.177.95.220:1085",
+      "socks5://31.134.5.74:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to compare 10 datacenter proxy providers for white-label reselling",
+      "best way to evaluate infrastructure pricing for proxy reselling",
+      "list of wholesale proxy endpoint management tools",
+      "large-scale proxy pool arbitrage strategies"
+    ],
+    "intention": "infrastructure opportunity datacenter",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "resolution": "5120x2880"
+  },
+  {
+    "age": 33,
+    "proxy": "socks5://212.18.127.175:1085",
+    "backupProxies": [
+      "socks5://193.163.207.205:1085",
+      "socks5://194.180.236.104:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to validate API responses at proxy layer",
+      "best way to enforce schema in API responses",
+      "5ms API response validation methods",
+      "list of early fail-fast optimization techniques"
+    ],
+    "intention": "validation responses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_9) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.8 Safari/605.1.15",
+    "resolution": "4096x2160"
+  },
+  {
+    "age": 25,
+    "proxy": "socks5://45.147.233.15:1085",
+    "backupProxies": [
+      "socks5://140.235.3.201:1085",
+      "socks5://193.163.89.75:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "best way to conduct academic research on DEX price efficiency",
+      "how to monitor DEX prices across different exchanges",
+      "how to use arbitrage for cryptocurrency research",
+      "list of legitimate trading study methods for DEX",
+      "how to analyze DEX price efficiency in academic research"
+    ],
+    "intention": "efficiency different exchanges",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/138.0.3351.0 Safari/537.36",
+    "resolution": "5120x2880"
+  },
+  {
+    "age": 50,
+    "proxy": "socks5://212.119.40.61:1085",
+    "backupProxies": [
+      "socks5://91.132.198.139:1085",
+      "socks5://216.40.74.78:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to reduce api response sizes by 90% using field filtering proxy",
+      "best way to strip unused json fields in api responses",
+      "list of methods for api data transformation proxy",
+      "how to implement graphql-like filtering in api proxy"
+    ],
+    "intention": "filtering reducing",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/139.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 42,
+    "proxy": "socks5://94.154.127.28:1085",
+    "backupProxies": [
+      "socks5://31.134.11.203:1085",
+      "socks5://45.136.26.160:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to collect public consumer trend data",
+      "list of consumer trend proxies",
+      "best way to aggregate market research data",
+      "legitimate business intelligence sources"
+    ],
+    "intention": "collecting legitimate",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/142.0.3598.0 Safari/537.36",
+    "resolution": "5120x2160"
+  },
+  {
+    "age": 65,
+    "proxy": "socks5://45.145.131.38:1085",
+    "backupProxies": [
+      "socks5://199.96.166.99:1085",
+      "socks5://193.202.16.161:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to find free estate planning templates",
+      "best way to create a will for senior citizens",
+      "list of legal aid clinics offering estate planning services"
+    ],
+    "intention": "collecting templates",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 24,
+    "proxy": "socks5://45.10.167.223:1085",
+    "backupProxies": [
+      "socks5://91.246.51.178:1085",
+      "socks5://194.99.25.59:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to scrape remote job boards for data",
+      "list of digital nomad resources for research",
+      "best way to collect legitimate remote employment data",
+      "remote work statistics research methods",
+      "how to analyze remote job data by geography"
+    ],
+    "intention": "collecting geography research",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/144.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 79,
+    "proxy": "socks5://94.154.127.88:1085",
+    "backupProxies": [
+      "socks5://140.235.3.232:1085",
+      "socks5://192.101.66.70:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to find affordable dental care for seniors",
+      "best dental plans for low-income seniors",
+      "how to compare dental care costs",
+      "list of dental care options for low-income seniors",
+      "how to ensure good oral health for seniors on a budget"
+    ],
+    "intention": "researching affordable options",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0",
+    "resolution": "5120x2160"
+  },
+  {
+    "age": 45,
+    "proxy": "socks5://31.134.7.173:1085",
+    "backupProxies": [
+      "socks5://77.83.26.175:1085",
+      "socks5://162.252.54.98:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to detect redirect chain proxies at scale",
+      "best way to monitor link equity during site migration",
+      "steps to ensure legitimate site migration QA for 500k URLs",
+      "how to audit redirect chains for site migration in WordPress",
+      "list of tools for checking redirect chains in bulk"
+    ],
+    "intention": "publishing migration",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/135.0.3179.0 Safari/537.36",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 80,
+    "proxy": "socks5://185.94.32.159:1085",
+    "backupProxies": [
+      "socks5://62.204.49.130:1085",
+      "socks5://91.132.125.18:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to find clinical trials for age-related conditions",
+      "legitimate clinical trials for seniors",
+      "list of age-related clinical trials",
+      "best way to match senior citizens with clinical trials",
+      "how to conduct elder health research at senior centers"
+    ],
+    "intention": "conditions clinical",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0",
+    "resolution": "3440x1440"
+  },
+  {
+    "age": 54,
+    "proxy": "socks5://45.147.233.218:1085",
+    "backupProxies": [
+      "socks5://193.163.207.164:1085",
+      "socks5://194.110.150.33:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to digitize historical newspapers",
+      "list of public domain newspaper archives",
+      "best way to preserve cultural heritage digitally",
+      "free tools for newspaper digitization",
+      "how to make historical newspapers accessible online"
+    ],
+    "intention": "digitizing historical",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
     "resolution": "3840x2160"
   },
   {
     "age": 33,
-    "proxy": "socks5://192.101.67.87:1085",
+    "proxy": "socks5://167.253.18.103:1085",
     "backupProxies": [
-      "socks5://88.218.46.220:1085",
-      "socks5://83.97.118.234:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to finance interstate move for new job",
-      "best way to cover moving expenses",
-      "list of relocation financing options",
-      "how to pay for new rental deposit"
-    ],
-    "intention": "opportunity interstate",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 37,
-    "proxy": "socks5://31.134.15.77:1085",
-    "backupProxies": [
-      "socks5://45.147.234.107:1085",
-      "socks5://91.132.198.17:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to pay unexpected tax bill immediately",
-      "list of IRS payment plans",
-      "best way to stop wage garnishment",
-      "how to negotiate tax debt without a tax resolution service"
-    ],
-    "intention": "immediately garnishment",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 31,
-    "proxy": "socks5://212.18.113.198:1085",
-    "backupProxies": [
-      "socks5://77.243.90.245:1085",
-      "socks5://62.204.49.228:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to get cash using car title",
-      "best way to secure quick cash with vehicle title",
-      "risks of car title loans",
-      "alternatives to vehicle collateral cash",
-      "how to avoid high risk auto equity lending"
-    ],
-    "intention": "considering warnings",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-    "resolution": "1366x768"
-  },
-  {
-    "age": 35,
-    "proxy": "socks5://162.252.52.166:1085",
-    "backupProxies": [
-      "socks5://91.246.51.102:1085",
-      "socks5://166.88.178.237:1085"
+      "socks5://31.134.6.168:1085",
+      "socks5://45.147.232.232:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to get immediate cash loan before payday",
-      "best payday loans online for rent",
-      "emergency cash advance options today",
-      "how to get a short term loan with bad credit",
-      "list of no credit check loans for rent"
+      "local service price comparison",
+      "home services transparency proxies",
+      "legitimate consumer tool"
     ],
-    "intention": "immediate paycheck overdue",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
-    "resolution": "2560x1600"
+    "intention": "transparency consumers",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/140.0",
+    "resolution": "4096x2304"
+  },
+  {
+    "age": 50,
+    "proxy": "socks5://185.77.220.119:1085",
+    "backupProxies": [
+      "socks5://193.151.190.240:1085",
+      "socks5://31.134.1.195:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to reduce api response sizes by 90% using field filtering proxy",
+      "best way to strip unused json fields in api responses",
+      "list of methods for api data transformation proxy",
+      "how to implement graphql-like filtering in api proxy"
+    ],
+    "intention": "filtering reducing response",
+    "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/139.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 20,
+    "proxy": "socks5://31.134.15.51:1085",
+    "backupProxies": [
+      "socks5://45.80.107.175:1085",
+      "socks5://45.136.24.41:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to aggregate internship boards",
+      "legitimate student job tools",
+      "best way to proxy rotate for job research",
+      "how to optimize career opportunity research"
+    ],
+    "intention": "internship aggregator university",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 42,
+    "proxy": "socks5://45.147.232.29:1085",
+    "backupProxies": [
+      "socks5://193.163.92.152:1085",
+      "socks5://140.235.171.65:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to collect public consumer trend data",
+      "list of consumer trend proxies",
+      "best way to aggregate market research data",
+      "legitimate business intelligence sources"
+    ],
+    "intention": "collecting legitimate",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/142.0.3598.0 Safari/537.36",
+    "resolution": "5120x2160"
+  },
+  {
+    "age": 31,
+    "proxy": "socks5://77.83.26.54:1085",
+    "backupProxies": [
+      "socks5://140.235.168.150:1085",
+      "socks5://46.253.131.177:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to set up social listening for brand mentions",
+      "best tools for monitoring Fortune 500 brand sentiment",
+      "legitimate ways to check brand reputation on social media",
+      "how to find clean proxies for social listening",
+      "list of reliable social media monitoring services"
+    ],
+    "intention": "monitoring platforms mentions",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "5120x2880"
   }
 ]

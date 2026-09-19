@@ -4,7 +4,7 @@ import os
 import re
 import requests
 from collections import OrderedDict
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, Response, stream_with_context
 
 app = Flask(__name__)
 
@@ -32,10 +32,7 @@ else:
 # ==============================================================================
 # [ КОНФИГУРАЦИЯ LLM7 API ]
 # ==============================================================================
-
 LLM7_MODEL = 'mistral-Nemo-Instruct-2407' # Рабочая модель из списка LLM7.io (turbo tier)
-# gemini-3.1-flash-lite ??
-#LLM7_MODEL = 'gpt-4o-mini' # Можно изменить на другую модель, поддерживаемую llm7.io
 LLM7_API_URL = "https://api.llm7.io/v1/chat/completions"
 
 LLM7_KEYS = []
@@ -45,7 +42,6 @@ if os.path.exists(LLM7_KEYS_FILE_PATH):
         LLM7_KEYS = [line.strip() for line in f if line.strip()]
 else:
     print("ВНИМАНИЕ: Файл llm7.io.txt не найден. Функции LLM (LLM7) будут отключены.")
-
 
 # ==============================================================================
 # [ КОНФИГУРАЦИЯ ПУТЕЙ ]
@@ -70,7 +66,6 @@ SHRINK_STOP_WORDS = {
     "a", "an", "the", "and", "or", "but", "if", "that", "this", "which", "who", "what"
 }
 
-
 # ==============================================================================
 # [ ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ]
 # ==============================================================================
@@ -86,7 +81,6 @@ def get_proxy_protocol_by_port(port_str):
     except ValueError:
         return "socks5://"
 
-
 def get_first_octet(ip_port_str):
     """Извлекает первый октет IP-адреса для проверки подсети."""
     try:
@@ -94,19 +88,16 @@ def get_first_octet(ip_port_str):
     except Exception:
         return None
 
-
 def is_profile_valid(profile):
     """Проверяет наличие всех обязательных полей в шаблоне профиля."""
     if not isinstance(profile, dict):
         return False
     return all(key in profile for key in REQUIRED_FIELDS)
 
-
 def normalize_gender(profile):
     """Жёсткая логика нормализации пола."""
     gender = profile.get('gender')
     profile['gender'] = 'female' if isinstance(gender, str) and gender.lower() == 'female' else 'male'
-
 
 def prepare_proxy(raw_proxy):
     """Форматирует строку прокси, добавляя нужный протокол."""
@@ -116,11 +107,8 @@ def prepare_proxy(raw_proxy):
     except ValueError:
         return f"socks5://{raw_proxy}"
 
-
 def shrink_intention_python(intention):
-    """
-    Нативное усечение intention до 2-3 значащих слов средствами Python.
-    """
+    """Нативное усечение intention до 2-3 значащих слов средствами Python."""
     if not intention or not isinstance(intention, str):
         return intention
 
@@ -143,23 +131,16 @@ def shrink_intention_python(intention):
 
     return " ".join(final_words)
 
-
 def generate_dummy_interests(existing_interests, intention, target_count):
-    """
-    Нативная (без LLM) генерация фейковых interests.
-    Комбинирует слова из существующих интересов и intention,
-    добавляя поисковые префиксы для правдоподобности.
-    """
+    """Нативная (без LLM) генерация фейковых interests."""
     if not existing_interests and not intention:
         return []
 
-    # Собираем базу слов из существующих интересов (очищаем от мусора)
     base_words = set()
     for interest in existing_interests:
         words = re.findall(r'[a-zA-Z0-9]{3,}', interest.lower())
         base_words.update(words)
 
-    # Добавляем значимые слова из intention
     if intention:
         int_words = re.findall(r'[a-zA-Z0-9]{3,}', intention.lower())
         int_words = [w for w in int_words if w not in SHRINK_STOP_WORDS]
@@ -170,7 +151,6 @@ def generate_dummy_interests(existing_interests, intention, target_count):
 
     base_words = list(base_words)
 
-    # Префиксы, делающие строки похожими на поисковые запросы
     prefixes = [
         "how to choose ", "best ", "buy ", "list of ", "find ",
         "reviews for ", "top ", "price of ", "compare ", "where to buy ",
@@ -178,36 +158,27 @@ def generate_dummy_interests(existing_interests, intention, target_count):
     ]
 
     dummies = []
-    # Генерируем пока не наберем нужное количество
     attempts = 0
     max_attempts = target_count * 5
 
     while len(dummies) < target_count and attempts < max_attempts:
         attempts += 1
-        # Берём 1-3 случайных слова из базы
         num_words = random.randint(1, 3)
         chunk = random.sample(base_words, min(num_words, len(base_words)))
 
-        # Решаем, добавлять ли префикс (в 70% случаев добавляем)
         if random.random() < 0.7:
             prefix = random.choice(prefixes)
             dummy = f"{prefix}{' '.join(chunk)}"
         else:
             dummy = " ".join(chunk)
 
-        # Избегаем точных дубликатов
         if dummy not in dummies and dummy not in existing_interests:
             dummies.append(dummy)
 
     return dummies
 
-
 def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
-    """
-    Отправляет interests и intention в выбранное LLM API (LLM7 или Mistral).
-    Возвращает кортеж: (список_интересов, bool_успешно_ли_изменено)
-    """
-    # Выбор конфигурации API на основе переданного параметра
+    """Отправляет interests и intention в выбранное LLM API (LLM7 или Mistral)."""
     if llm_provider == "mistral":
         if not MISTRAL_KEYS:
             print("Ошибка: Список ключей mistral.txt пуст!")
@@ -221,7 +192,8 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
             return interests, False
         api_url = LLM7_API_URL
         model = LLM7_MODEL
-        keys_to_try = LLM7_KEYS
+        # ИСПРАВЛЕНО: Умножаем на 2, чтобы сделать 2 попытки даже с 1 ключом
+        keys_to_try = LLM7_KEYS * 2 if len(LLM7_KEYS) > 1 else LLM7_KEYS
 
     system_prompt = (
         "You are an SEO and search behavior expert. Your task is to modify a list of user interests "
@@ -233,7 +205,7 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
     user_prompt = (
         f"User Intention: {intention}\n"
         f"Original Interests: {json.dumps(interests)}\n\n"
-        "Return ONLY a valid JSON array of strings. The number of interests should be 4-5, not more.  No markdown, no explanations, just the JSON array."
+        "Return ONLY a valid JSON array of strings. The number of interests should be 4-5, not more. No markdown, no explanations, just the JSON array."
     )
 
     payload = {
@@ -259,17 +231,8 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
         try:
             response = requests.post(api_url, json=payload, headers=headers, timeout=15)
             response.raise_for_status()
-#                    try:
-#            response = requests.post(api_url, json=payload, headers=headers, timeout=15)
-#            response.raise_for_status()
 
-            # ВРЕМЕННЫЙ ЛОГ ДЛЯ ОТЛАДКИ
-            print(f"[DEBUG LLM7] Raw Response: {response.text[:500]}")
-            
             content = response.json()['choices'][0]['message']['content'].strip()
-            print(f"[DEBUG LLM7] Extracted Content: {content[:300]}")
-
-#            content = response.json()['choices'][0]['message']['content'].strip()
 
             if content.startswith("```"):
                 content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
@@ -295,7 +258,6 @@ def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
 # ==============================================================================
 # [ WEB-ИНТЕРФЕЙС ]
 # ==============================================================================
-
 @app.route('/')
 def index():
     """Рендерит главную страницу с выбором файлов и настройками."""
@@ -314,11 +276,9 @@ def index():
                           proxy_files=proxy_files,
                           profile_files=profile_files)
 
-
 # ==============================================================================
 # [ ЭНДПОИНТ СТАТИСТИКИ ]
 # ==============================================================================
-
 @app.route('/stats', methods=['POST'])
 def stats():
     data = request.get_json(silent=True) or {}
@@ -351,14 +311,12 @@ def stats():
     except json.JSONDecodeError as e:
         return jsonify({"error": f"JSON error: {e}"}), 400
 
-
 # ==============================================================================
-# [ ОСНОВНОЙ ЭНДПОИНТ ГЕНЕРАЦИИ ]
+# [ ОСНОВНОЙ ЭНДПОИНТ ГЕНЕРАЦИИ (SSE STREAMING) ]
 # ==============================================================================
-
 @app.route('/generate', methods=['POST'])
 def generate():
-    """Основной обработчик генерации профилей с распределением прокси."""
+    """Основной обработчик генерации профилей с потоковой передачей (SSE)."""
 
     # --- 1. Сбор и валидация входных параметров ---
     if request.is_json:
@@ -402,7 +360,6 @@ def generate():
     except (ValueError, TypeError):
         max_reuse = 1
 
-    # Защита от кривых значений лимитов
     limit_int = max(0, int(limit_int))
     dummy_int = max(0, int(dummy_int))
 
@@ -451,8 +408,7 @@ def generate():
 
     def pick_backup_proxy(exclude_ips, exclude_octet=None):
         available_fresh = get_available_proxies(exclude_ips)
-        
-        # Фильтруем по первому октету (подсети), если задано
+
         if exclude_octet is not None:
             available_fresh = [p for p in available_fresh if get_first_octet(p) != exclude_octet]
 
@@ -462,13 +418,11 @@ def generate():
             backup_usage[proxy] = 1
             return proxy
 
-        # Если уникальных из другой подсети не осталось, пробуем дубликаты (если разрешено)
         if allow_dup:
             candidates = []
             for p in proxies:
                 if p in main_proxies or p in exclude_ips:
                     continue
-                # Фильтруем дубликаты по подсети тоже
                 if exclude_octet is not None and get_first_octet(p) == exclude_octet:
                     continue
                 if backup_usage.get(p, 0) < max_reuse:
@@ -481,129 +435,131 @@ def generate():
                 proxy = random.choice(pool)
                 backup_usage[proxy] = backup_usage.get(proxy, 0) + 1
                 return proxy
-                
-        # Крайний случай: разрешаем взять из той же подсети, если совсем нет вариантов
+
         fallback_any = get_available_proxies(exclude_ips)
         if fallback_any:
             proxy = random.choice(fallback_any)
             used_proxies.add(proxy)
             backup_usage[proxy] = 1
             return proxy
-            
+
         return None
 
-    # --- 4. Цикл сборки профилей ---
-    warning_msg = ""
-    output_profiles = []
-    llm_modified_count = 0  # Счётчик успешных модификаций через Mistral
+    # --- 4. ГЕНЕРАТОР ДЛЯ STREAMING (SSE) ---
+    def generate_stream():
+        warning_msg = ""
+        output_profiles = []
+        llm_modified_count = 0
 
-    for i in range(max_profiles):
-        main_raw = pick_main_proxy()
-        if main_raw is None:
-            warning_msg = f"Not enough unique proxies for main. Generated {i} profiles."
-            break
-
-        # Получаем первый октет основного прокси для фильтрации бекапов
-        main_octet = get_first_octet(main_raw)
-        
-        profile_proxies = {main_raw}
-        backup_list = []
-
-        b1_raw = pick_backup_proxy(profile_proxies, exclude_octet=main_octet)
-        if b1_raw is not None:
-            profile_proxies.add(b1_raw)
-            backup_list.append(prepare_proxy(b1_raw))
-
-            b2_raw = pick_backup_proxy(profile_proxies, exclude_octet=main_octet)
-            if b2_raw is not None:
-                profile_proxies.add(b2_raw)
-                backup_list.append(prepare_proxy(b2_raw))
-
-        valid_template = None
-        for _ in range(100):
-            temp = random.choice(profiles_templates)
-            if is_profile_valid(temp):
-                valid_template = temp.copy()
+        for i in range(max_profiles):
+            main_raw = pick_main_proxy()
+            if main_raw is None:
+                warning_msg = f"Not enough unique proxies for main. Generated {i} profiles."
                 break
 
-        if not valid_template:
-            warning_msg = f"No valid profile templates left. Generated {i} profiles."
-            break
+            main_octet = get_first_octet(main_raw)
+            profile_proxies = {main_raw}
+            backup_list = []
 
-        # --- 5. Логика модификации и усечения ---
-        if modify_int:
-            new_interests, was_modified = modify_interests_with_llm(
-                valid_template.get('intention', ''),
-                valid_template.get('interests', []),
-                llm_provider=llm_provider
-            )
-            valid_template['interests'] = new_interests
-            if was_modified:
-                llm_modified_count += 1
+            b1_raw = pick_backup_proxy(profile_proxies, exclude_octet=main_octet)
+            if b1_raw is not None:
+                profile_proxies.add(b1_raw)
+                backup_list.append(prepare_proxy(b1_raw))
 
-        if shrink_int:
-            valid_template['intention'] = shrink_intention_python(
-                valid_template.get('intention', '')
-            )
+                b2_raw = pick_backup_proxy(profile_proxies, exclude_octet=main_octet)
+                if b2_raw is not None:
+                    profile_proxies.add(b2_raw)
+                    backup_list.append(prepare_proxy(b2_raw))
 
-        # Лимитирование интересов (если > 0)
-        current_interests = valid_template.get('interests', [])
-        if limit_int > 0 and len(current_interests) > limit_int:
-            valid_template['interests'] = current_interests[:limit_int]
+            valid_template = None
+            for _ in range(100):
+                temp = random.choice(profiles_templates)
+                if is_profile_valid(temp):
+                    valid_template = temp.copy()
+                    break
 
-        # Дополнение фейковыми интересами (если > 0 и текущих меньше нужного)
-        current_interests = valid_template.get('interests', [])
-        if dummy_int > 0 and len(current_interests) < dummy_int:
-            needed = dummy_int - len(current_interests)
-            dummies = generate_dummy_interests(
-                current_interests,
-                valid_template.get('intention', ''),
-                needed
-            )
-            valid_template['interests'] = current_interests + dummies
+            if not valid_template:
+                warning_msg = f"No valid profile templates left. Generated {i} profiles."
+                break
 
-        # --- 6. Финальная сборка профиля с ЖЁСТКИМ соблюдением порядка ключей ---
-        normalize_gender(valid_template)
+            # --- Логика модификации и усечения ---
+            if modify_int:
+                new_interests, was_modified = modify_interests_with_llm(
+                    valid_template.get('intention', ''),
+                    valid_template.get('interests', []),
+                    llm_provider=llm_provider
+                )
+                valid_template['interests'] = new_interests
+                if was_modified:
+                    llm_modified_count += 1
 
-        ordered_profile = OrderedDict([
-            ("age", valid_template.get('age')),
-            ("proxy", prepare_proxy(main_raw)),
-            ("backupProxies", backup_list),
-        ])
+            if shrink_int:
+                valid_template['intention'] = shrink_intention_python(valid_template.get('intention', ''))
 
-        for key, value in valid_template.items():
-            if key not in ordered_profile:
-                ordered_profile[key] = value
+            current_interests = valid_template.get('interests', [])
+            if limit_int > 0 and len(current_interests) > limit_int:
+                valid_template['interests'] = current_interests[:limit_int]
 
-        output_profiles.append(ordered_profile)
+            current_interests = valid_template.get('interests', [])
+            if dummy_int > 0 and len(current_interests) < dummy_int:
+                needed = dummy_int - len(current_interests)
+                dummies = generate_dummy_interests(current_interests, valid_template.get('intention', ''), needed)
+                valid_template['interests'] = current_interests + dummies
 
-    # --- 7. Сохранение результата и ответ ---
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    with open(os.path.join(OUTPUT_DIR, 'output.json'), 'w', encoding='utf-8') as f:
-        json.dump(output_profiles, f, indent=2, ensure_ascii=False)
+            normalize_gender(valid_template)
 
-    stats_info = {
-        "total_profiles": len(output_profiles),
-        "unique_main_proxies": len(main_proxies),
-        "backup_usage_stats": dict(sorted(backup_usage.items(), key=lambda x: x[1], reverse=True)[:10]),
-        "llm_modified_count": llm_modified_count
-    }
+            ordered_profile = OrderedDict([
+                ("age", valid_template.get('age')),
+                ("proxy", prepare_proxy(main_raw)),
+                ("backupProxies", backup_list),
+            ])
 
-    message = warning_msg or f"Successfully generated: {len(output_profiles)} profiles."
-    return jsonify({
-        "profiles": output_profiles,
-        "message": message,
-        "stats": stats_info
-    })
+            for key, value in valid_template.items():
+                if key not in ordered_profile:
+                    ordered_profile[key] = value
 
+            output_profiles.append(ordered_profile)
+
+            # ============ ОТПРАВКА ПРОГРЕССА В БРАУЗЕР ============
+            progress_data = {
+                "type": "progress",
+                "current": i + 1,
+                "total": max_profiles
+            }
+            yield f"data: {json.dumps(progress_data)}\n\n"
+
+        # --- Сохранение результата на сервере ---
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        with open(os.path.join(OUTPUT_DIR, 'output.json'), 'w', encoding='utf-8') as f:
+            json.dump(output_profiles, f, indent=2, ensure_ascii=False)
+
+        stats_info = {
+            "total_profiles": len(output_profiles),
+            "unique_main_proxies": len(main_proxies),
+            "backup_usage_stats": dict(sorted(backup_usage.items(), key=lambda x: x[1], reverse=True)[:10]),
+            "llm_modified_count": llm_modified_count
+        }
+        message = warning_msg or f"Successfully generated: {len(output_profiles)} profiles."
+
+        # ============ ОТПРАВКА ФИНАЛЬНОГО РЕЗУЛЬТАТА ============
+        final_data = {
+            "type": "complete",
+            "profiles": output_profiles,
+            "message": message,
+            "stats": stats_info
+        }
+        yield f"data: {json.dumps(final_data)}\n\n"
+
+    # Возвращаем потоковый ответ (text/event-stream)
+    return Response(stream_with_context(generate_stream()), mimetype='text/event-stream')
 
 # ==============================================================================
 # [ ЗАПУСК ПРИЛОЖЕНИЯ ]
 # ==============================================================================
-
 if __name__ == "__main__":
     os.makedirs(PROXY_DIR,   exist_ok=True)
     os.makedirs(PROFILE_DIR, exist_ok=True)
     os.makedirs(OUTPUT_DIR,  exist_ok=True)
 
     app.run(host="0.0.0.0", port=8182, debug=True)
+    
