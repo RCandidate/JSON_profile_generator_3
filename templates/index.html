@@ -1,507 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
-    <title>Generator - Second Life</title>
+    <title>Generator - Brand-New Life</title>
 
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Используем относительные пути (без первого слеша), чтобы Angie проксировал их правильно -->
+    <link rel="shortcut icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/vintage.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg:        #0d0b14;
-            --bg2:       #12101d;
-            --panel:     #18152a;
-            --border:    #2e2848;
-            --accent:    #b388ff;
-            --accent2:   #ffd54f;
-            --dim:       #2a2545;
-            --text:      #d1c4e9;
-            --text-dim:  #7e6fa6;
-            --danger:    #ef5350;
-            --warning:   #ffb74d;
-            --mono:      'Share Tech Mono', monospace;
-            --display:   'Orbitron', sans-serif;
-            --retro:     'VT323', monospace;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            font-family: var(--mono);
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-            padding: 15px 20px;
-            font-size: 17px;
-            background-image:
-                repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 2px,
-                    rgba(179,136,255,0.015) 2px,
-                    rgba(179,136,255,0.015) 4px
-                );
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background: repeating-linear-gradient(
-                to bottom,
-                transparent 0px,
-                transparent 3px,
-                rgba(0,0,0,0.08) 3px,
-                rgba(0,0,0,0.08) 4px
-            );
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        .terminal-wrapper {
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        .header {
-            border: 1px solid var(--border);
-            border-bottom: none;
-            padding: 12px 24px 10px;
-            background: var(--panel);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
-        }
-        .header-bar {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-right: 10px;
-        }
-
-        .dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;}
-        .dot-r { background: linear-gradient(135deg, #4a148c, #7b1fa2); }
-        .dot-y { background: linear-gradient(135deg, #7b1fa2, #b388ff); }
-        .dot-g { background: linear-gradient(135deg, #b388ff, #e1bee7); }
-
-        .header-title {
-            font-family: var(--display);
-            font-size: 14px;
-            color: var(--text-dim);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-        h1 {
-            font-family: var(--display);
-            font-size: 24px;
-            font-weight: 900;
-            color: var(--accent);
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            text-shadow: 0 0 25px rgba(179,136,255,0.4);
-            white-space: nowrap;
-        }
-        .version-tag {
-            font-family: var(--retro);
-            font-size: 22px;
-            color: var(--accent2);
-            opacity: 0.8;
-        }
-        .subtitle {
-            font-family: var(--retro);
-            font-size: 16px;
-            color: var(--text-dim);
-            letter-spacing: 2px;
-            margin-left: auto;
-            white-space: nowrap;
-        }
-
-        .main-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-        }
-        .main-grid .panel {
-            border-top: none;
-        }
-        .main-grid .panel:first-child {
-            border-right: none;
-        }
-
-        .panel {
-            border: 1px solid var(--border);
-            background: var(--panel);
-            padding: 20px 24px;
-        }
-
-        .section-label {
-            font-family: var(--display);
-            font-size: 13px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--text-dim);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .section-label::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border);
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-bottom: 16px;
-        }
-
-        label {
-            font-family: var(--mono);
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--text-dim);
-        }
-
-        select, input[type="number"] {
-            font-family: var(--mono);
-            background: var(--bg2);
-            border: 1px solid var(--dim);
-            color: var(--text);
-            font-size: 17px;
-            padding: 10px 14px;
-            outline: none;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            appearance: none;
-            -webkit-appearance: none;
-            cursor: pointer;
-            width: 100%;
-        }
-        select:focus, input[type="number"]:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 1px rgba(179,136,255,0.2), inset 0 0 12px rgba(179,136,255,0.05);
-        }
-        select option {
-            font-family: var(--mono);
-            background: var(--bg2);
-            color: var(--text);
-        }
-
-        .stats-badge {
-            margin-top: 4px;
-            font-family: var(--mono);
-            font-size: 14px;
-            color: var(--text-dim);
-            min-height: 20px;
-            transition: color 0.3s;
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-        .stat-item { display: flex; align-items: center; gap: 6px; }
-        .stat-val {
-            font-family: var(--retro);
-            font-size: 20px;
-            color: var(--accent);
-            line-height: 1;
-        }
-        .stat-val.warn { color: var(--warning); }
-        .stat-val.ok   { color: var(--accent); }
-
-        .count-row {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-        .count-row input {
-            width: 140px;
-        }
-        .capacity-hint {
-            font-family: var(--retro);
-            font-size: 22px;
-            color: var(--text-dim);
-        }
-        .capacity-hint .cap-num { color: var(--accent2); }
-
-        .options-block {
-            margin-bottom: 16px;
-            padding: 14px 16px;
-            border: 1px solid var(--dim);
-            background: var(--bg2);
-        }
-        .options-block > label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            cursor: pointer;
-            margin-bottom: 10px;
-            font-size: 16px;
-            text-transform: none;
-            letter-spacing: 1px;
-        }
-        .options-block > label:last-child { margin-bottom: 0; }
-
-        .options-block input[type="checkbox"] {
-            appearance: none;
-            -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
-            border: 1px solid var(--dim);
-            background: var(--bg);
-            cursor: pointer;
-            position: relative;
-            flex-shrink: 0;
-            transition: border-color 0.2s, background 0.2s;
-        }
-        .options-block input[type="checkbox"]:checked {
-            border-color: var(--accent);
-            background: var(--accent);
-        }
-        .options-block input[type="checkbox"]:checked::after {
-            content: '';
-            position: absolute;
-            left: 5px; top: 1px;
-            width: 6px; height: 10px;
-            border: solid var(--bg);
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-        }
-
-        .reuse-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 8px;
-            padding-left: 32px;
-            opacity: 0.4;
-            pointer-events: none;
-            transition: opacity 0.3s;
-        }
-        .reuse-row.active {
-            opacity: 1;
-            pointer-events: all;
-        }
-        .reuse-row label {
-            font-size: 14px;
-            margin-bottom: 0;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: default;
-        }
-        .reuse-row input[type="number"] {
-            width: 100px;
-            padding: 8px 10px;
-            font-size: 17px;
-        }
-
-        .num-input-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-        .num-input-row label {
-            font-size: 14px;
-            text-transform: none;
-            letter-spacing: 1px;
-            white-space: nowrap;
-        }
-        .num-input-row input {
-            width: 90px;
-            padding: 8px 10px;
-            font-size: 17px;
-        }
-
-        .btn-generate {
-            font-family: var(--display);
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            padding: 14px 36px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: color 0.2s, box-shadow 0.2s;
-            width: 100%;
-            margin-top: 10px;
-        }
-        .btn-generate::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--accent);
-            transform: translateX(-101%);
-            transition: transform 0.2s;
-            z-index: 0;
-        }
-        .btn-generate:hover::before { transform: translateX(0); }
-        .btn-generate:hover { color: var(--bg); box-shadow: 0 0 25px rgba(179,136,255,0.3); }
-        .btn-generate span { position: relative; z-index: 1; }
-        .btn-generate:disabled {
-            border-color: var(--dim);
-            color: var(--text-dim);
-            cursor: not-allowed;
-        }
-        .btn-generate:disabled::before { display: none; }
-
-        .progress-wrap {
-            height: 3px;
-            background: var(--dim);
-            margin-top: 14px;
-            display: none;
-        }
-        .progress-wrap.visible { display: block; }
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, var(--accent), var(--accent2));
-            width: 0%;
-            transition: width 0.4s;
-            box-shadow: 0 0 12px var(--accent);
-        }
-
-        .status-line {
-            margin-top: 10px;
-            font-family: var(--mono);
-            font-size: 15px;
-            min-height: 22px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .cursor-blink {
-            display: inline-block;
-            width: 10px; height: 18px;
-            background: var(--accent);
-            animation: blink 1s step-end infinite;
-            vertical-align: middle;
-        }
-        @keyframes blink { 50% { opacity: 0; } }
-
-        .status-ok   { color: var(--accent); }
-        .status-warn { color: var(--warning); }
-        .status-err  { color: var(--danger); }
-
-        .result-panel {
-            border: 1px solid var(--border);
-            border-top: none;
-            background: var(--bg2);
-            padding: 0;
-            display: none;
-        }
-        .result-panel.visible { display: block; }
-        .result-header {
-            padding: 10px 20px;
-            background: var(--panel);
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .result-title {
-            font-family: var(--display);
-            font-size: 12px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--text-dim);
-        }
-        .result-actions { display: flex; gap: 10px; }
-
-        .btn-small {
-            font-family: var(--mono);
-            font-size: 17px;
-            background: transparent;
-            border: 1px solid var(--dim);
-            color: var(--text-dim);
-            padding: 6px 14px;
-            cursor: pointer;
-            letter-spacing: 1px;
-            transition: all 0.15s;
-        }
-        .btn-small:hover {
-            border-color: var(--accent2);
-            color: var(--accent2);
-        }
-
-        textarea {
-            font-family: var(--mono);
-            width: 100%;
-            height: 250px;
-            background: transparent;
-            border: none;
-            color: #ce93d8;
-            font-size: 15px;
-            padding: 16px 20px;
-            resize: vertical;
-            outline: none;
-            line-height: 1.6;
-        }
-
-        .footer {
-            border: 1px solid var(--border);
-            border-top: 1px solid var(--dim);
-            padding: 10px 24px;
-            background: var(--panel);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: var(--mono);
-            font-size: 14px;
-            color: var(--text-dim);
-            letter-spacing: 1px;
-        }
-        .footer-right {
-            display: flex;
-            gap: 30px;
-        }
-        .footer-accent { color: var(--accent2); }
-        .footer-llm { color: var(--accent); }
-
-        .select-wrap { position: relative; }
-        .select-wrap::after {
-            content: '';
-            position: absolute;
-            right: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 6px solid var(--accent);
-            pointer-events: none;
-        }
-        .select-wrap select { padding-right: 36px; }
-
-        @media (max-width: 1000px) {
-            .main-grid { grid-template-columns: 1fr; }
-            .main-grid .panel:first-child { border-right: 1px solid var(--border); }
-            .header { flex-wrap: wrap; }
-            .subtitle { margin-left: 0; }
-        }
-    </style>
 </head>
+
+
 <body>
 <div class="terminal-wrapper">
 
@@ -514,9 +28,9 @@
         <span class="header-title">profile_generator.py</span>
         <div style="display:flex;align-items:baseline;gap:8px;">
             <h1>GEN//SMART</h1>
-            <span class="version-tag">v 3.0</span>
+            <span class="version-tag">v 3.3</span>
         </div>
-        <span class="subtitle">// PROXY-BASED IDENTITY SYNTHESIS //</span>
+        <span class="subtitle">// SOCIOLOGICAL IDENTITY SYNTHESIS //</span>
     </div>
 
     <div class="main-grid">
@@ -588,12 +102,19 @@
             </div>
 
             <div class="section-label" style="margin-top:8px;">[ INTERESTS MODIFIERS ]</div>
-            
+
             <div class="options-block">
                 <label>
                     <input type="checkbox" id="modify_interests">
                     <span>Modify Interests (via LLM)</span>
                 </label>
+                <div class="reuse-row" id="llmRow" style="padding-left: 32px; margin-top: 8px;">
+                    <label>Select LLM:</label>
+                    <select id="llm_provider" style="width: 100%; cursor: pointer;">
+                        <option value="llm7" selected>llm7.io (default)</option>
+                        <option value="mistral">Mistral</option>
+                    </select>
+                </div>
                 <label>
                     <input type="checkbox" id="shrink_intention" checked>
                     <span>Shrink intention</span>
@@ -645,6 +166,14 @@
     const reuseRow = document.getElementById('reuseRow');
     cbDup.addEventListener('change', function() {
         reuseRow.classList.toggle('active', this.checked);
+    });
+
+    const cbMod = document.getElementById('modify_interests');
+    const llmRow = document.getElementById('llmRow');
+    // Инициализация начального состояния
+    llmRow.classList.toggle('active', cbMod.checked);
+    cbMod.addEventListener('change', function() {
+        llmRow.classList.toggle('active', this.checked);
     });
 
     async function loadStats() {
@@ -746,6 +275,7 @@
             allow_dup:        document.getElementById('allow_dup').checked,
             max_reuse:        parseInt(document.getElementById('max_reuse').value) || 1,
             modify_interests: document.getElementById('modify_interests').checked,
+            llm_provider:     document.getElementById('llm_provider').value,
             shrink_intention: document.getElementById('shrink_intention').checked,
             limit_interests:  parseInt(document.getElementById('limit_interests').value) || 0,
             dummy_interests:  parseInt(document.getElementById('dummy_interests').value) || 0

@@ -27,7 +27,25 @@ if os.path.exists(KEYS_FILE_PATH):
     with open(KEYS_FILE_PATH, 'r', encoding='utf-8') as f:
         MISTRAL_KEYS = [line.strip() for line in f if line.strip()]
 else:
-    print("ВНИМАНИЕ: Файл mistral.txt не найден. Функции LLM будут отключены.")
+    print("ВНИМАНИЕ: Файл mistral.txt не найден. Функции LLM (Mistral) будут отключены.")
+
+# ==============================================================================
+# [ КОНФИГУРАЦИЯ LLM7 API ]
+# ==============================================================================
+
+LLM7_MODEL = 'mistral-Nemo-Instruct-2407' # Рабочая модель из списка LLM7.io (turbo tier)
+# gemini-3.1-flash-lite ??
+#LLM7_MODEL = 'gpt-4o-mini' # Можно изменить на другую модель, поддерживаемую llm7.io
+LLM7_API_URL = "https://api.llm7.io/v1/chat/completions"
+
+LLM7_KEYS = []
+LLM7_KEYS_FILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'llm7.io.txt')
+if os.path.exists(LLM7_KEYS_FILE_PATH):
+    with open(LLM7_KEYS_FILE_PATH, 'r', encoding='utf-8') as f:
+        LLM7_KEYS = [line.strip() for line in f if line.strip()]
+else:
+    print("ВНИМАНИЕ: Файл llm7.io.txt не найден. Функции LLM (LLM7) будут отключены.")
+
 
 # ==============================================================================
 # [ КОНФИГУРАЦИЯ ПУТЕЙ ]
@@ -184,14 +202,26 @@ def generate_dummy_interests(existing_interests, intention, target_count):
     return dummies
 
 
-def modify_interests_with_llm(intention, interests):
+def modify_interests_with_llm(intention, interests, llm_provider="llm7"):
     """
-    Отправляет interests и intention в Mistral API для трансформации.
+    Отправляет interests и intention в выбранное LLM API (LLM7 или Mistral).
     Возвращает кортеж: (список_интересов, bool_успешно_ли_изменено)
     """
-    if not MISTRAL_KEYS:
-        print("Ошибка: Список ключей mistral.txt пуст!")
-        return interests, False
+    # Выбор конфигурации API на основе переданного параметра
+    if llm_provider == "mistral":
+        if not MISTRAL_KEYS:
+            print("Ошибка: Список ключей mistral.txt пуст!")
+            return interests, False
+        api_url = MISTRAL_API_URL
+        model = MISTRAL_MODEL
+        keys_to_try = MISTRAL_KEYS * 2 if len(MISTRAL_KEYS) > 1 else MISTRAL_KEYS
+    else: # По умолчанию используем LLM7
+        if not LLM7_KEYS:
+            print("Ошибка: Список ключей llm7.io.txt пуст!")
+            return interests, False
+        api_url = LLM7_API_URL
+        model = LLM7_MODEL
+        keys_to_try = LLM7_KEYS
 
     system_prompt = (
         "You are an SEO and search behavior expert. Your task is to modify a list of user interests "
@@ -207,7 +237,7 @@ def modify_interests_with_llm(intention, interests):
     )
 
     payload = {
-        "model": MISTRAL_MODEL,
+        "model": model,
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -215,7 +245,6 @@ def modify_interests_with_llm(intention, interests):
         "temperature": 0.7
     }
 
-    keys_to_try = MISTRAL_KEYS * 2 if len(MISTRAL_KEYS) > 1 else MISTRAL_KEYS
     attempts_allowed = 2
 
     for i, key in enumerate(keys_to_try):
@@ -228,10 +257,19 @@ def modify_interests_with_llm(intention, interests):
         }
 
         try:
-            response = requests.post(MISTRAL_API_URL, json=payload, headers=headers, timeout=15)
+            response = requests.post(api_url, json=payload, headers=headers, timeout=15)
             response.raise_for_status()
+#                    try:
+#            response = requests.post(api_url, json=payload, headers=headers, timeout=15)
+#            response.raise_for_status()
 
+            # ВРЕМЕННЫЙ ЛОГ ДЛЯ ОТЛАДКИ
+            print(f"[DEBUG LLM7] Raw Response: {response.text[:500]}")
+            
             content = response.json()['choices'][0]['message']['content'].strip()
+            print(f"[DEBUG LLM7] Extracted Content: {content[:300]}")
+
+#            content = response.json()['choices'][0]['message']['content'].strip()
 
             if content.startswith("```"):
                 content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
@@ -239,19 +277,20 @@ def modify_interests_with_llm(intention, interests):
             modified = json.loads(content)
             if isinstance(modified, list):
                 # Успех! Сдвигаем ключи
-                if len(MISTRAL_KEYS) > 1:
+                if llm_provider == "mistral" and len(MISTRAL_KEYS) > 1:
                     MISTRAL_KEYS.append(MISTRAL_KEYS.pop(0))
+                elif llm_provider == "llm7" and len(LLM7_KEYS) > 1:
+                    LLM7_KEYS.append(LLM7_KEYS.pop(0))
                 return modified, True
             else:
                 raise ValueError("LLM returned not a list")
 
         except Exception as e:
-            print(f"[Mistral] Попытка {i+1} с ключом ...{key[-4:]} провалилась: {e}")
+            print(f"[{llm_provider.upper()}] Попытка {i+1} с ключом ...{key[-4:]} провалилась: {e}")
             continue
 
-    print("[Mistral] Все попытки исчерпаны. Оставляем interests как есть.")
+    print(f"[{llm_provider.upper()}] Все попытки исчерпаны. Оставляем interests как есть.")
     return interests, False
-
 
 # ==============================================================================
 # [ WEB-ИНТЕРФЕЙС ]
@@ -330,6 +369,7 @@ def generate():
         allow_dup      = data.get('allow_dup', False)
         max_reuse      = data.get('max_reuse', 1)
         modify_int     = data.get('modify_interests', False)
+        llm_provider   = data.get('llm_provider', 'llm7')
         shrink_int     = data.get('shrink_intention', False)
         limit_int      = data.get('limit_interests', 0)
         dummy_int      = data.get('dummy_interests', 0)
@@ -338,9 +378,10 @@ def generate():
         profile_file   = request.form.get('profile_file', '')
         count_raw      = request.form.get('count', 0)
         allow_dup      = request.form.get('allow_dup', '') == 'true'
-        modify_int     = request.form.get('modify_interests', '') == 'true'
-        shrink_int     = request.form.get('shrink_intention', '') == 'true'
         limit_int      = int(request.form.get('limit_interests', 0))
+        modify_int     = request.form.get('modify_interests', '') == 'true'
+        llm_provider   = request.form.get('llm_provider', 'llm7')
+        shrink_int     = request.form.get('shrink_intention', '') == 'true'
         dummy_int      = int(request.form.get('dummy_interests', 0))
         try:
             max_reuse = int(request.form.get('max_reuse', 1))
@@ -493,7 +534,8 @@ def generate():
         if modify_int:
             new_interests, was_modified = modify_interests_with_llm(
                 valid_template.get('intention', ''),
-                valid_template.get('interests', [])
+                valid_template.get('interests', []),
+                llm_provider=llm_provider
             )
             valid_template['interests'] = new_interests
             if was_modified:

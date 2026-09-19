@@ -11,5 +11,7 @@ services:
       - ./output:/app/output
       - ./app.py:/app/app.py         # Заодно пробросим сам скрипт, чтобы не пересобирать при изменении кода
       - ./templates:/app/templates   # <-- Добавили проброс шаблонов
+      - ./static:/app/static         # <-- Добавили проброс статики
       - ./mistral.txt:/app/mistral.txt
+      - ./llm7.io.txt:/app/llm7.io.txt
       
