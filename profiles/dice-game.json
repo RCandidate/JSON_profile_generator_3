@@ -1,0 +1,2251 @@
+[
+
+  {
+    "gender": "male",
+    "age": 20,
+    "interests": ["micro-withdrawal stress tests", "first $10 payout as trust signal", "gradual deposit scaling"],
+    "intention": "first big win vanished; now treats every platform like a lab experiment until 5 successful withdrawals",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 58,
+    "interests": ["bank-level security audits", "SOC 2 compliance", "ISO 27001 certification"],
+    "intention": "had account hacked, win stolen; now prioritizes platforms with enterprise-grade infosec",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 42,
+    "interests": ["withdrawal success rate APIs", "historical failure logs", "real-time outage dashboards"],
+    "intention": "faced 3 'temporary system issues' during big wins; now monitors platform uptime like a DevOps engineer",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 88,
+    "interests": ["voice-verified withdrawals", "biometric confirmation logs", "tamper-proof session records"],
+    "intention": "won 2 BTC, but support claimed 'voice didn’t match'; now demands multi-factor proof of identity at win time",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 27,
+    "interests": ["open-source frontend clients", "client-side win verification", "no hidden server overrides"],
+    "intention": "saw win in UI, but backend 'corrected' it post-refresh; now only trusts verifiable client-side logic",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 50,
+    "interests": ["financial regulator complaint history", "IBAS arbitration records", "license suspension logs"],
+    "intention": "spent 8 months fighting for $62k payout; now checks regulator databases before creating an account",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["public payout wallet addresses", "on-chain win history", "transparent reserve proofs"],
+    "intention": "platform claimed 'insufficient reserves' after jackpot; now verifies liquidity before depositing",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 67,
+    "interests": ["no 'geo-block after win' policies", "stable jurisdiction residency", "clear exit rules"],
+    "intention": "won 4.5 BTC, then account banned for 'unsupported country' — despite KYC approval; now checks geo-policy stability",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["withdrawal rehearsal mode", "sandbox testing", "dry-run confirmations"],
+    "intention": "lost 1.2 BTC due to misconfigured wallet address; now practices withdrawals on testnet-equivalent flows",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["legal opinion letters", "counsel-reviewed T&Cs", "dispute jurisdiction clauses"],
+    "intention": "contract deemed 'unenforceable' in home country after win; now requires multijurisdictional legal backing",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 22,
+    "interests": ["Twitch streamer payout verifications", "community watchdog groups", "scam alert feeds"],
+    "intention": "trusted influencer promo, lost 0.9 BTC; now cross-checks every recommendation against independent watchdogs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 55,
+    "interests": ["annual payout integrity reports", "external auditor attestations", "fraud detection transparency"],
+    "intention": "won claimed 'system glitch' voided win; now demands published incident root-cause analyses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 79,
+    "interests": ["simplified dispute forms", "no legalese appeals", "human-reviewed escalation paths"],
+    "intention": "9-month battle over 1.7 BTC win; now only uses platforms with <72h escalation SLAs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 30,
+    "interests": ["on-chain win anchoring", "IPFS game logs", "timestamped bet proofs"],
+    "intention": "operator altered logs post-win; now requires cryptographic bet finality at submission",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["no retroactive bonus voiding", "pre-win T&C snapshots", "change-log transparency"],
+    "intention": "bonus revoked after TOS update pushed silently; now archives terms before every session",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 61,
+    "interests": ["financial statement disclosures", "quarterly liquidity reports", "reserve wallet attestations"],
+    "intention": "platform collapsed mid-withdrawal; now treats every casino like a bank — checks solvency first",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 21,
+    "interests": ["student-safe withdrawal flows", "no predatory bonus traps", "clear loss limits"],
+    "intention": "first deposit turned into 0.5 BTC, then vanished after 'verification loop'; now tests UX for dark patterns",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 48,
+    "interests": ["multi-jurisdictional licensing", "dual-regulator oversight", "cross-border enforcement paths"],
+    "intention": "won in MGA-jurisdiction site, but enforcement impossible from home country; now prioritizes local+global licenses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 84,
+    "interests": ["trusted contact withdrawal delegation", "notarized proxy letters", "executor access protocols"],
+    "intention": "health crisis froze access to 3.2 BTC win; now sets up legal withdrawal continuity in advance",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["real-time compliance chat", "live auditor hotline", "immediate escalation access"],
+    "intention": "sat on hold for 11 days during withdrawal; now requires <5-min human support response guarantee",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["no 'bonus forfeiture on withdrawal' clauses", "clean separation of deposit/bonus funds", "transparent accounting"],
+    "intention": "forced to lose $18k in bonus to withdraw $7k deposit; now demands segregated fund tracking",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 53,
+    "interests": ["payout insurance via Lloyd’s", "surety bonds", "financial guarantee certificates"],
+    "intention": "operator declared bankruptcy after win; now only plays where winnings are insured up to €500k",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 25,
+    "interests": ["on-chain reputation scores", "withdrawal history NFTs", "proof-of-payout credentials"],
+    "intention": "no platform believed his win was real; now builds verifiable track record to avoid 'fake win' accusations",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 69,
+    "interests": ["large-print T&C highlights", "audio-read policies", "summary checklists"],
+    "intention": "missed clause about 'max win cap' in tiny font; now demands plain-language win guarantees",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 43,
+    "interests": ["real-time reserve ratio dashboards", "on-chain solvency proofs casino", "best gambling APIs"],
+    "intention": "platform ran out of BTC mid-withdrawal queue; now monitors liquidity like a treasury manager",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 72,
+    "interests": ["no mandatory video calls", "document reuse policies", "no expired ID rejections"],
+    "intention": "ID rejected for 'blur' after 3 uploads; win held 5 months; now avoids platforms with arbitrary verification",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["community payout challenge participation", "group withdrawal tests", "collective verification"],
+    "intention": "trusted solo win, got scammed; now only joins coordinated multi-user withdrawal tests",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 56,
+    "interests": ["no suspicious activity casino", "transparent fraud rules casino", "casino evidence submission"],
+    "intention": "account frozen",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 24,
+    "interests": ["wallet address whitelisting", "pre-registered payout destinations", "change-request cooldowns"],
+    "intention": "hacker changed withdrawal address; now uses platforms with strict destination controls",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["no retroactive geo-blocks", "stable service availability", "exit liquidity guarantees"],
+    "intention": "won while traveling, then blocked for 'jurisdiction violation'; now verifies location policies in real time",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 86,
+    "interests": ["executor withdrawal protocols", "notarized instruction sets", "legal continuity planning"],
+    "intention": "estate lawyer couldn’t access 2.8 BTC win; now ensures winnings are part of formal succession plan",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.66 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+
+
+
+
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["bitcoin casino", "license verification", "withdrawal horror stories"],
+    "intention": "after losing 5 BTC to exit scam, searching for licensed casino with proven payout history",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["crypto casino", "user testimonials", "payout proof verification"],
+    "intention": "burned by fake 'provably fair' casino, now seeking platform with verifiable big win cashouts",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 42,
+    "interests": ["bitcoin gambling", "regulatory compliance", "third-party audits"],
+    "intention": "lost winnings to KYC infinite loop scam, only considering casinos with clean audit trails",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["crypto gambling", "corporate transparency", "ownership verification"],
+    "intention": "after 12 ETH confiscation as 'bonus abuse', seeking casinos with clear ownership and terms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["science on casino gambling", "community trust casino", "casino longevity reputation"],
+    "intention": "victim of rug pull casino, now exclusively researching platforms operating 5+ years successfully",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["top level bitcoin casino in usa", "cold wallet proofs", "on-chain verification"],
+    "intention": "after casino vanished with 8.5 BTC jackpot, only considering sites with transparent on-chain payout proofs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["list of best crypto casino usa", "casino legal jurisdiction", "gaming dispute resolution"],
+    "intention": "lost 25K USD equivalent to 'terms violation', seeking casino with proper licensing and fair dispute process",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["bitcoin gambling", "affiliate honesty", "payout speed tests"],
+    "intention": "scammed by shill reviews, now testing small withdrawals before any serious play on new platforms",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 56,
+    "interests": ["crypto gambling", "casino financial audits", "reserve proofs"],
+    "intention": "retirement fund damaged by insolvent casino, now demanding regular proof of funds from platforms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  
+  
+   {
+    "gender": "male",
+    "age": 24,
+    "interests": ["bitcoin casino", "arbitrage opportunities", "withdrawal speed"],
+    "intention": "finding casinos with instant BTC payouts for arbitrage strategy",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["list of fair crypto casino", "casino bonus hunting", "casino wagering requirements"],
+    "intention": "professional bonus hunting with guaranteed withdrawal methods",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 42,
+    "interests": ["bitcoin gambling website list", "provably fair edge", "mathematical advantage of dice games"],
+    "intention": "exploiting provably fair algorithms with mathematical edge",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 56,
+    "interests": ["crypto gambling", "retirement income", "monthly cashflow"],
+    "intention": "generating supplemental retirement income from crypto dice",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 68,
+    "interests": ["online gambling advantages", "casino fixed income", "low volatility strategies"],
+    "intention": "consistent daily profits from low-risk dice strategies",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 19,
+    "interests": ["bitcoin casino", "student income", "tuition funding"],
+    "intention": "earning crypto to pay university tuition through smart gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 73,
+    "interests": ["crypto casino", "pension supplement", "risk-adjusted returns"],
+    "intention": "supplementing pension with calculated crypto gambling returns",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["bitcoin gambling", "freelancer income", "location independence"],
+    "intention": "replacing freelance income with professional gambling profits",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["crypto gambling", "tax optimization", "legal profit extraction"],
+    "intention": "maximizing after-tax profits from crypto gambling activities",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 35,
+    "interests": ["best  gambling sites online", "automated systems", "withdrawal automation"],
+    "intention": "building automated systems for guaranteed profit withdrawal",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 62,
+    "interests": ["bitcoin casino", "dividend alternative", "passive income generation"],
+    "intention": "creating passive income stream comparable to stock dividends",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 22,
+    "interests": ["crypto casino", "college expenses", "textbook money"],
+    "intention": "earning steady income for college living expenses via dice",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 81,
+    "interests": ["bitcoin gambling", "legacy building", "intergenerational wealth"],
+    "intention": "accumulating crypto to leave as inheritance for grandchildren",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["crypto gambling", "single mother income", "child support supplement"],
+    "intention": "supplementing income to provide better life for children",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["how to win in gambling", "mortgage payment payout", "casino debt reduction"],
+    "intention": "using gambling profits to accelerate mortgage payoff",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 26,
+    "interests": ["bitcoin casino", "startup capital", "entrepreneur funding"],
+    "intention": "accumulating capital for business startup through gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 75,
+    "interests": ["crypto casino", "medical expenses", "healthcare funding"],
+    "intention": "generating income for medical treatments and healthcare costs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 32,
+    "interests": ["bitcoin gambling", "real estate investment", "property down payment"],
+    "intention": "saving for real estate investment through disciplined gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 90,
+    "interests": ["crypto gambling", "final bucket list", "travel fund"],
+    "intention": "funding travel bucket list with gambling profits in golden years",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 44,
+    "interests": ["gambling online", "gamling career transition", "sabbatical funding"],
+    "intention": "funding career break while transitioning to new profession",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 18,
+    "interests": ["bitcoin casino", "first car fund", "independence money"],
+    "intention": "earning money for first car and living independently",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 60,
+    "interests": ["crypto casino", "early retirement", "financial freedom"],
+    "intention": "accelerating early retirement through strategic gambling profits",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["bitcoin gambling", "wedding fund", "marriage preparation"],
+    "intention": "saving for dream wedding through calculated crypto gambling",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["crypto gambling", "alimony payments", "legal obligations"],
+    "intention": "meeting financial obligations through professional gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 67,
+    "interests": ["gambling online in 2026", "grandchildren education", "college fund"],
+    "intention": "creating education fund for grandchildren's university costs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 53,
+    "interests": ["bitcoin casino", "menopause career gap", "re-entry income"],
+    "intention": "bridging income gap during career re-entry phase",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 23,
+    "interests": ["crypto casino", "student loan payoff", "debt freedom"],
+    "intention": "aggressively paying student loans with gambling profits",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 77,
+    "interests": ["bitcoin gambling", "hobby monetization", "senior entrepreneurship"],
+    "intention": "turning gambling hobby into serious income source",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 33,
+    "interests": ["crypto gambling", "egg freezing fund", "fertility preservation"],
+    "intention": "funding fertility preservation procedures through gambling",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["what is online gambling", "midlife crisis fund", "reinvention capital"],
+    "intention": "funding life reinvention and new beginnings at midlife",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 21,
+    "interests": ["bitcoin casino", "gap year funding", "travel experience"],
+    "intention": "funding gap year travels before starting career",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 85,
+    "interests": ["crypto casino", "assisted living supplement", "quality care funding"],
+    "intention": "ensuring premium assisted living through gambling income",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["bitcoin gambling", "divorce recovery", "fresh start fund"],
+    "intention": "rebuilding finances after divorce through strategic gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 58,
+    "interests": ["crypto gambling", "downsizing supplement", "retirement community"],
+    "intention": "supplementing income during transition to retirement community",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 40,
+    "interests": ["why gambling is illegal", "caregiver income", "parent care funding"],
+    "intention": "earning while caregiving for elderly parents at home",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 25,
+    "interests": ["bitcoin casino", "coding bootcamp fund", "career switch"],
+    "intention": "funding tech education for career change through gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 70,
+    "interests": ["crypto casino", "reverse mortgage alternative", "home equity preservation"],
+    "intention": "generating income without touching home equity in retirement",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 45,
+    "interests": ["bitcoin gambling", "empty nest income", "post-children career"],
+    "intention": "creating income stream as children leave for college",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 30,
+    "interests": ["crypto gambling", "van life conversion", "nomadic lifestyle fund"],
+    "intention": "funding conversion to van life and nomadic existence",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 64,
+    "interests": ["online gambling in usa", "winning social security gap", "government benefit supplement"],
+    "intention": "bridging gap between expenses and social security income",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["bitcoin casino", "IVF treatment fund", "family creation"],
+    "intention": "funding fertility treatments to start a family",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 41,
+    "interests": ["crypto gambling", "bankruptcy recovery", "credit rebuild"],
+    "intention": "rebuilding financial life after bankruptcy through gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 79,
+    "interests": ["bitcoin gambling", "funeral expense fund", "final arrangements"],
+    "intention": "pre-funding final expenses to not burden family",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["crypto casino", "surrogacy fund", "alternative family building"],
+    "intention": "funding surrogacy journey to become a mother",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 20,
+    "interests": ["gambling site online", "musical equipment", "band startup fund"],
+    "intention": "funding music career and band equipment through gambling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 66,
+    "interests": ["bitcoin casino", "chronic illness fund", "medical supplement"],
+    "intention": "covering costs of chronic illness treatments and medications",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 49,
+    "interests": ["crypto gambling", "men's health fund", "partner support"],
+    "intention": "supporting partner's health issues through gambling income",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["fast bitcoin gambling", "safe adoption fund", "casino withdrawal process"],
+    "intention": "funding and expenses",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 72,
+    "interests": ["crypto casino", "veteran benefits gap", "military pension supplement"],
+    "intention": "supplementing military pension with additional income",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 55,
+    "interests": ["best sites for gambling", "casino loss recovery"],
+    "intention": "replacing lost",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 43,
+    "interests": ["bitcoin casino", "parental leave fund", "family time income"],
+    "intention": "creating income during extended parental leave from work",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 88,
+    "interests": ["crypto gambling", "centenarian goal", "100th birthday fund"],
+    "intention": "funding celebration and care for 100th birthday milestone",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3840x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 46,
+    "interests": ["bitcoin gambling", "gender transition fund", "medical transition costs"],
+    "intention": "funding gender affirmation surgeries and transition costs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x2880",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["crypto casino", "mid-career break", "professional development fund"],
+    "intention": "funding sabbatical for professional retraining and growth",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "3440x1440",
+    "proxy": "1.1.1.1:1"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["provably fair dice algorithms", "RNG seed verification APIs", "probability distribution analysis"],
+    "intention": "analyzing provably fair dice game outcomes using cryptographic seed verification APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["dice game house edge calculators", "Monte Carlo simulations", "variance tracking dashboards"],
+    "intention": "building a Monte Carlo simulator for dice game bankroll variance using legal casino RTP data",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["responsible gambling APIs", "session limit enforcement", "self-exclusion registries"],
+    "intention": "integrating responsible gambling controls into a legal dice game platform via operator APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["dice roll streak analytics", "bet sizing strategies", "Kelly criterion tools"],
+    "intention": "researching optimal bet sizing for dice games using Kelly criterion and historical streak data",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 52,
+    "interests": ["legal online casino licensing APIs", "jurisdiction compliance checks", "KYC integration"],
+    "intention": "verifying dice game operator licenses via regulated gambling authority APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["dice game RTP aggregation", "payout audit trails", "smart contract fairness"],
+    "intention": "auditing on-chain dice game smart contracts for payout fairness and RTP accuracy",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["dice game volatility indices", "risk-of-ruin modeling", "bankroll management APIs"],
+    "intention": "modeling risk-of-ruin for dice game sessions using legal gambling statistics APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 26,
+    "interests": ["provably fair dice game tutorials", "hash chain verification", "client seed rotation"],
+    "intention": "creating educational content on verifying provably fair dice rolls via hash chain APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["dice game affiliate compliance", "advertising standards APIs", "geo-fencing rules"],
+    "intention": "ensuring dice game affiliate campaigns comply with regional gambling advertising APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["dice game latency benchmarks", "real-time bet feeds", "WebSocket performance"],
+    "intention": "benchmarking dice game bet feed latency using legal operator WebSocket APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["dice game tournament structures", "leaderboard APIs", "prize pool distribution"],
+    "intention": "building a legal dice game tournament leaderboard using operator-provided ranking APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 35,
+    "interests": ["dice game bonus terms analysis", "wagering requirement calculators", "EV modeling"],
+    "intention": "calculating expected value of dice game bonuses using legal casino terms APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 44,
+    "interests": ["dice game fraud detection", "anomaly detection APIs", "collusion pattern analysis"],
+    "intention": "detecting fraudulent dice game patterns using regulated operator anomaly detection APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 30,
+    "interests": ["dice game player profiling", "responsible play heuristics", "behavioral analytics"],
+    "intention": "profiling dice game player behavior for responsible play interventions via legal analytics APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["dice game regulatory reporting", "audit log APIs", "compliance dashboards"],
+    "intention": "automating dice game regulatory reporting using licensed operator audit log APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["dice game probability visualizations", "interactive charts", "statistical libraries"],
+    "intention": "visualizing dice game probability distributions using legal historical outcome datasets",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["dice game API rate limits", "backoff strategies", "request throttling"],
+    "intention": "optimizing dice game data collection within legal API rate limits using adaptive throttling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 43,
+    "interests": ["dice game outcome databases", "SQL analytics", "long-term trend analysis"],
+    "intention": "analyzing long-term dice game outcome trends from legal operator data exports",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 33,
+    "interests": ["dice game smart contract audits", "Solidity static analysis", "fairness proofs"],
+    "intention": "auditing dice game smart contracts for fairness and security using static analysis tools",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 36,
+    "interests": ["dice game loyalty programs", "player retention APIs", "reward optimization"],
+    "intention": "optimizing legal dice game loyalty rewards using operator retention analytics APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 46,
+    "interests": ["dice game tax reporting", "withholding calculations", "regulatory APIs"],
+    "intention": "automating dice game winnings tax reporting using legal jurisdiction APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 25,
+    "interests": ["dice game math models", "combinatorics", "educational simulations"],
+    "intention": "building educational dice game math simulations using legal probability references",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 40,
+    "interests": ["dice game multi-currency support", "FX conversion APIs", "payment gateways"],
+    "intention": "integrating multi-currency support into a legal dice game using licensed FX APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["dice game chat moderation", "NLP toxicity filters", "community guidelines"],
+    "intention": "moderating dice game community chat using legal NLP toxicity detection APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["dice game anti-money-laundering", "AML screening APIs", "transaction monitoring"],
+    "intention": "integrating AML screening into a legal dice game platform using compliance APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["dice game UX research", "accessibility standards", "player feedback APIs"],
+    "intention": "improving dice game UX for accessibility using legal player feedback APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["dice game high-availability", "load balancing", "incident response APIs"],
+    "intention": "ensuring high availability of a legal dice game platform using operator status APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["dice game data privacy", "GDPR compliance APIs", "consent management"],
+    "intention": "ensuring GDPR compliance in dice game analytics using legal consent management APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["dice game historical archives", "data warehousing", "ETL pipelines"],
+    "intention": "building a historical dice game data warehouse from legal operator archives",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["dice game A/B testing", "experimentation platforms", "statistical significance"],
+    "intention": "running A/B tests on dice game features using legal experimentation platform APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["how to verify provably fair dice rolls", "what is a hash chain in dice games", "why do dice games use client seeds"],
+    "intention": "изучение методов проверки честности dice-игр через публичные API операторов",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["how to calculate house edge in dice games", "what is RTP in online dice games", "how to run Monte Carlo simulations for dice"],
+    "intention": "построение симулятора банкролла для dice-игр на основе легальных данных RTP",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["what is responsible gambling in dice games", "how to set session limits in online dice games", "how do self-exclusion registries work"],
+    "intention": "интеграция инструментов ответственной игры в легальную dice-платформу через операторские API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["how to analyze dice roll streaks", "what is the Kelly criterion for dice betting", "how to size bets in dice games"],
+    "intention": "исследование оптимального размера ставок в dice-играх через критерий Келли и исторические данные",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 52,
+    "interests": ["how to check if an online dice casino is licensed", "what is a gambling jurisdiction license", "how do KYC checks work in dice games"],
+    "intention": "проверка лицензий dice-операторов через API регулирующих органов",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["how to audit on-chain dice game smart contracts", "what is provable fairness in crypto dice", "how to verify payout accuracy in dice games"],
+    "intention": "аудит смарт-контрактов dice-игр на честность выплат и точность RTP",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["what is risk of ruin in dice gambling", "how to model dice game volatility", "how to manage a dice game bankroll"],
+    "intention": "моделирование риска разорения для dice-сессий на основе легальной статистики",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 26,
+    "interests": ["how to verify a dice game hash seed", "what is a client seed rotation", "how to explain provably fair dice to beginners"],
+    "intention": "создание обучающих материалов по проверке честности dice-бросков через hash chain API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["how to run compliant dice game affiliate campaigns", "what are gambling advertising standards", "how does geo-fencing work in dice gambling"],
+    "intention": "обеспечение соответствия партнёрских кампаний dice-игр региональным рекламным API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["how to benchmark dice game latency", "what is a real-time bet feed", "how do WebSocket APIs work in dice games"],
+    "intention": "бенчмаркинг задержек бет-фидов dice-игр через легальные WebSocket API операторов",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["how to build a dice game tournament leaderboard", "what is a prize pool distribution", "how do ranking APIs work in dice games"],
+    "intention": "создание легального турнирного лидерборда dice-игр на основе операторских ranking API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 35,
+    "interests": ["how to calculate EV of dice game bonuses", "what are wagering requirements", "how to compare dice game bonus terms"],
+    "intention": "расчёт ожидаемой ценности бонусов dice-игр через легальные API условий казино",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 44,
+    "interests": ["how to detect fraud in dice games", "what is anomaly detection in gambling", "how to spot collusion patterns in dice games"],
+    "intention": "выявление мошеннических паттернов в dice-играх через регулируемые API операторов",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 30,
+    "interests": ["how to profile dice game players responsibly", "what is behavioral analytics in gambling", "how to detect problem gambling patterns"],
+    "intention": "профилирование поведения игроков в dice-играх для ответственных интервенций через легальные API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["how to automate dice game regulatory reporting", "what is an audit log in gambling", "how to build a compliance dashboard"],
+    "intention": "автоматизация регуляторной отчётности dice-игр через лицензированные audit log API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["how to visualize dice probability distributions", "what is a binomial distribution in dice games", "how to chart dice roll outcomes"],
+    "intention": "визуализация вероятностных распределений dice-игр на легальных исторических датасетах",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["how to handle dice game API rate limits", "what is exponential backoff", "how to throttle requests to gambling APIs"],
+    "intention": "оптимизация сбора данных dice-игр в рамках легальных API rate limits через адаптивный throttling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 43,
+    "interests": ["how to analyze long-term dice outcome trends", "what is an outcome database in gambling", "how to query dice game SQL data"],
+    "intention": "анализ долгосрочных трендов исходов dice-игр из легальных экспортов данных операторов",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 33,
+    "interests": ["how to audit a dice game smart contract", "what is Solidity static analysis", "how to prove fairness in on-chain dice"],
+    "intention": "аудит смарт-контрактов dice-игр на честность и безопасность через инструменты статического анализа",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 36,
+    "interests": ["how to optimize dice game loyalty rewards", "what is player retention in gambling", "how do reward APIs work in dice games"],
+    "intention": "оптимизация легальных программ лояльности dice-игр через операторские retention API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 46,
+    "interests": ["how to report dice game winnings for tax", "what is withholding tax on gambling", "how do jurisdiction tax APIs work"],
+    "intention": "автоматизация налоговой отчётности по выигрышам в dice-играх через легальные jurisdiction API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 25,
+    "interests": ["how to model dice game math", "what is combinatorics in dice games", "how to simulate dice probability in Python"],
+    "intention": "создание образовательных математических симуляций dice-игр на легальных вероятностных источниках",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 40,
+    "interests": ["how to add multi-currency support to a dice game", "what is an FX conversion API", "how do payment gateways work in gambling"],
+    "intention": "интеграция мультивалютности в легальную dice-игру через лицензированные FX API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["how to moderate dice game chat", "what is NLP toxicity detection", "how to enforce community guidelines in gambling"],
+    "intention": "модерация чата dice-игр через легальные NLP API обнаружения токсичности",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["how to integrate AML screening in dice games", "what is transaction monitoring in gambling", "how do AML compliance APIs work"],
+    "intention": "интеграция AML-скрининга в легальную dice-платформу через compliance API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["how to improve dice game UX accessibility", "what is WCAG for gambling sites", "how to collect player feedback legally"],
+    "intention": "улучшение UX dice-игр для доступности через легальные API сбора обратной связи",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["how to ensure high availability of a dice game", "what is load balancing in gambling", "how to monitor incidents via status APIs"],
+    "intention": "обеспечение высокой доступности легальной dice-платформы через операторские status API",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["how to ensure GDPR compliance in dice game analytics", "what is consent management", "how to handle player data legally"],
+    "intention": "обеспечение GDPR-соответствия аналитики dice-игр через легальные consent management API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["how to build a dice game data warehouse", "what is an ETL pipeline in gambling", "how to archive dice game history"],
+    "intention": "построение исторического data warehouse dice-игр из легальных архивов операторов",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["how to A/B test dice game features", "what is statistical significance in gambling tests", "how to run experiments on dice platforms"],
+    "intention": "проведение A/B тестов функций dice-игр через легальные experimentation platform API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  }
+
+
+  ,
+  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["how to verify provably fair casino games", "what is a random number generator in online casinos", "how do casino audits work"],
+    "intention": "researching provably fair verification methods for licensed online casino platforms",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["how to calculate casino house edge", "what is RTP in online slots", "how to compare casino game volatility"],
+    "intention": "building an RTP and volatility comparison tool for licensed online casino games",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["what is responsible gambling in online casinos", "how to set deposit limits at casinos", "how do self-exclusion programs work"],
+    "intention": "integrating responsible gambling tools into a licensed online casino platform",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["how to analyze slot machine variance", "what is the Kelly criterion for casino betting", "how to manage a casino bankroll"],
+    "intention": "researching optimal bankroll management strategies for online casino games",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 52,
+    "interests": ["how to check if an online casino is licensed", "what is a gambling jurisdiction license", "how do KYC checks work at casinos"],
+    "intention": "verifying online casino licenses through regulated gambling authority APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["how to audit casino game fairness", "what is a payout audit trail", "how to verify slot RTP accuracy"],
+    "intention": "auditing licensed online casino games for payout fairness and RTP accuracy",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["what is risk of ruin in casino gambling", "how to model casino game volatility", "how to assess casino session risk"],
+    "intention": "modeling risk of ruin for online casino sessions using licensed gambling statistics",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 26,
+    "interests": ["how to explain RNG to casino beginners", "what is a certified RNG", "how to read casino game documentation"],
+    "intention": "creating educational content about RNG certification for online casino players",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["how to run compliant casino affiliate campaigns", "what are gambling advertising standards", "how does geo-fencing work in online casinos"],
+    "intention": "ensuring casino affiliate campaigns comply with regional gambling advertising APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["how to benchmark casino game latency", "what is a real-time betting feed", "how do WebSocket APIs work in casinos"],
+    "intention": "benchmarking live casino game feed latency using licensed operator WebSocket APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["how to build a casino tournament leaderboard", "what is a prize pool distribution", "how do casino ranking APIs work"],
+    "intention": "building a licensed casino tournament leaderboard using operator ranking APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 35,
+    "interests": ["how to calculate EV of casino bonuses", "what are wagering requirements", "how to compare casino welcome offers"],
+    "intention": "calculating expected value of casino bonuses using licensed operator terms APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 44,
+    "interests": ["how to detect fraud in online casinos", "what is anomaly detection in gambling", "how to spot bonus abuse patterns"],
+    "intention": "detecting fraudulent patterns in online casinos using regulated operator anomaly APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 30,
+    "interests": ["how to profile casino players responsibly", "what is behavioral analytics in gambling", "how to detect problem gambling patterns"],
+    "intention": "profiling online casino player behavior for responsible play interventions via legal APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["how to automate casino regulatory reporting", "what is an audit log in gambling", "how to build a casino compliance dashboard"],
+    "intention": "automating online casino regulatory reporting using licensed operator audit log APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["how to visualize slot volatility distributions", "what is a hit frequency in slots", "how to chart casino game outcomes"],
+    "intention": "visualizing online casino game outcome distributions using licensed historical datasets",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["how to handle casino API rate limits", "what is exponential backoff", "how to throttle requests to gambling APIs"],
+    "intention": "optimizing online casino data collection within legal API rate limits using adaptive throttling",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 43,
+    "interests": ["how to analyze long-term casino trends", "what is an outcome database in gambling", "how to query casino SQL data"],
+    "intention": "analyzing long-term online casino trends from licensed operator data exports",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 33,
+    "interests": ["how to audit a casino smart contract", "what is Solidity static analysis", "how to prove fairness in crypto casinos"],
+    "intention": "auditing crypto casino smart contracts for fairness and security using static analysis tools",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 36,
+    "interests": ["how to optimize casino loyalty rewards", "what is player retention in gambling", "how do casino reward APIs work"],
+    "intention": "optimizing licensed casino loyalty programs using operator retention analytics APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 46,
+    "interests": ["how to report casino winnings for tax", "what is withholding tax on gambling", "how do jurisdiction tax APIs work"],
+    "intention": "automating casino winnings tax reporting using legal jurisdiction APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 25,
+    "interests": ["how to model casino game math", "what is combinatorics in card games", "how to simulate casino probability in Python"],
+    "intention": "building educational casino math simulations using legal probability references",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 40,
+    "interests": ["how to add multi-currency support to a casino", "what is an FX conversion API", "how do casino payment gateways work"],
+    "intention": "integrating multi-currency support into a licensed online casino using regulated FX APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["how to moderate casino chat", "what is NLP toxicity detection", "how to enforce community guidelines in gambling"],
+    "intention": "moderating online casino chat using legal NLP toxicity detection APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["how to integrate AML screening in casinos", "what is transaction monitoring in gambling", "how do AML compliance APIs work"],
+    "intention": "integrating AML screening into a licensed online casino platform using compliance APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["how to improve casino UX accessibility", "what is WCAG for gambling sites", "how to collect player feedback legally"],
+    "intention": "improving online casino UX for accessibility using legal player feedback APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["how to ensure high availability of a casino", "what is load balancing in gambling", "how to monitor incidents via status APIs"],
+    "intention": "ensuring high availability of a licensed online casino platform using operator status APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["how to ensure GDPR compliance in casino analytics", "what is consent management", "how to handle player data legally"],
+    "intention": "ensuring GDPR compliance in online casino analytics using legal consent management APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["how to build a casino data warehouse", "what is an ETL pipeline in gambling", "how to archive casino game history"],
+    "intention": "building a historical online casino data warehouse from licensed operator archives",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["how to A/B test casino features", "what is statistical significance in gambling tests", "how to run experiments on casino platforms"],
+    "intention": "running A/B tests on online casino features using legal experimentation platform APIs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  }
+
+,
+  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["best online casino list 2026", "casino rating comparison guide", "top rated casino reviews"],
+    "intention": "comparing casino lists",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["licensed casino list by country", "casino rating breakdown", "trusted casino reviews"],
+    "intention": "reading casino ratings",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["casino list with RTP data", "casino rating for high RTP slots", "slot casino reviews 2026"],
+    "intention": "shortlisting high RTP",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["casino list with low wagering requirements", "casino rating for bonus terms", "welcome bonus casino reviews"],
+    "intention": "shortlisting fair bonuses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 52,
+    "interests": ["casino list by gambling license", "casino rating for regulatory compliance", "licensed casino reviews"],
+    "intention": "checking casino licenses",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["provably fair casino list", "casino rating for crypto payments", "blockchain casino reviews"],
+    "intention": "comparing crypto casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["casino list with fast withdrawals", "casino rating for payout speed", "withdrawal casino reviews"],
+    "intention": "shortlisting fast payouts",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 26,
+    "interests": ["casino list for beginners", "casino rating simplicity guide", "beginner friendly casino reviews"],
+    "intention": "reading beginner guides",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["casino list with responsible gambling tools", "casino rating for player protection", "safe casino reviews"],
+    "intention": "checking safe casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["live dealer casino list", "casino rating for live games", "live casino reviews 2026"],
+    "intention": "comparing live casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["casino list with tournament schedule", "casino rating for leaderboards", "tournament casino reviews"],
+    "intention": "browsing casino tournaments",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 35,
+    "interests": ["casino list with no deposit bonuses", "casino rating for free spins", "no deposit casino reviews"],
+    "intention": "comparing no deposit offers",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 44,
+    "interests": ["casino list with verified fairness", "casino rating for RNG certification", "audited casino reviews"],
+    "intention": "checking fairness audits",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 30,
+    "interests": ["casino list with mobile browser support", "casino rating for desktop play", "desktop casino reviews"],
+    "intention": "browsing desktop casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["casino list with game provider details", "casino rating by software vendor", "provider casino reviews"],
+    "intention": "comparing game providers",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["casino list with volatility filters", "casino rating for slot variance", "slot volatility casino reviews"],
+    "intention": "shortlisting slot casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["casino list with API documentation", "casino rating for data access", "API friendly casino reviews"],
+    "intention": "comparing casino APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 43,
+    "interests": ["casino list with historical data exports", "casino rating for analytics tools", "analytics casino reviews"],
+    "intention": "browsing analytics casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 33,
+    "interests": ["casino list with smart contract audits", "casino rating for on-chain fairness", "crypto casino reviews"],
+    "intention": "checking on-chain casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 36,
+    "interests": ["casino list with loyalty program details", "casino rating for VIP rewards", "loyalty casino reviews"],
+    "intention": "comparing loyalty programs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 46,
+    "interests": ["casino list with tax reporting info", "casino rating for jurisdiction clarity", "tax friendly casino reviews"],
+    "intention": "checking casino tax info",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 25,
+    "interests": ["casino list with math model explanations", "casino rating for educational content", "educational casino reviews"],
+    "intention": "reading educational reviews",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 40,
+    "interests": ["casino list with multi-currency support", "casino rating for FX handling", "multi currency casino reviews"],
+    "intention": "comparing multi currency casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["casino list with chat moderation policies", "casino rating for community safety", "community casino reviews"],
+    "intention": "checking community policies",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["casino list with AML compliance details", "casino rating for KYC process", "AML casino reviews"],
+    "intention": "checking AML policies",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["casino list with accessibility ratings", "casino rating for UX quality", "accessible casino reviews"],
+    "intention": "comparing accessible casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["casino list with uptime statistics", "casino rating for platform stability", "reliable casino reviews"],
+    "intention": "checking platform uptime",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["casino list with GDPR statements", "casino rating for privacy policy", "privacy focused casino reviews"],
+    "intention": "checking privacy policies",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["casino list with data warehouse integrations", "casino rating for reporting tools", "reporting casino reviews"],
+    "intention": "comparing reporting tools",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["casino list with A-B testing frameworks", "casino rating for experimentation tools", "experimentation casino reviews"],
+    "intention": "browsing experimentation casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  }
+
+
+,  {
+    "gender": "male",
+    "age": 34,
+    "interests": ["best online casino list 2026", "casino rating comparison guide", "top rated casino reviews"],
+    "intention": "comparing casino lists",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 28,
+    "interests": ["licensed casino list by country", "casino rating breakdown", "trusted casino reviews"],
+    "intention": "reading casino ratings",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 45,
+    "interests": ["casino list with RTP data", "casino rating for high RTP slots", "slot casino reviews 2026"],
+    "intention": "shortlisting high RTP",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 37,
+    "interests": ["casino list with low wagering requirements", "casino rating for bonus terms", "welcome bonus casino reviews"],
+    "intention": "shortlisting fair bonuses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 52,
+    "interests": ["casino list by gambling license", "casino rating for regulatory compliance", "licensed casino reviews"],
+    "intention": "checking casino licenses",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 31,
+    "interests": ["provably fair casino list", "casino rating for crypto payments", "blockchain casino reviews"],
+    "intention": "comparing crypto casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 39,
+    "interests": ["casino list with fast withdrawals", "casino rating for payout speed", "withdrawal casino reviews"],
+    "intention": "shortlisting fast payouts",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 26,
+    "interests": ["casino list for beginners", "casino rating simplicity guide", "beginner friendly casino reviews"],
+    "intention": "reading beginner guides",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 48,
+    "interests": ["casino list with responsible gambling tools", "casino rating for player protection", "safe casino reviews"],
+    "intention": "checking safe casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 41,
+    "interests": ["live dealer casino list", "casino rating for live games", "live casino reviews 2026"],
+    "intention": "comparing live casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 29,
+    "interests": ["casino list with tournament schedule", "casino rating for leaderboards", "tournament casino reviews"],
+    "intention": "browsing casino tournaments",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 35,
+    "interests": ["casino list with no deposit bonuses", "casino rating for free spins", "no deposit casino reviews"],
+    "intention": "comparing no deposit offers",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 44,
+    "interests": ["casino list with verified fairness", "casino rating for RNG certification", "audited casino reviews"],
+    "intention": "checking fairness audits",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 30,
+    "interests": ["casino list with desktop browser support", "casino rating for desktop play", "desktop casino reviews"],
+    "intention": "browsing desktop casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 50,
+    "interests": ["casino list with game provider details", "casino rating by software vendor", "provider casino reviews"],
+    "intention": "comparing game providers",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 27,
+    "interests": ["casino list with volatility filters", "casino rating for slot variance", "slot volatility casino reviews"],
+    "intention": "shortlisting slot casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 38,
+    "interests": ["casino list with API documentation", "casino rating for data access", "API friendly casino reviews"],
+    "intention": "comparing casino APIs",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 43,
+    "interests": ["casino list with historical data exports", "casino rating for analytics tools", "analytics casino reviews"],
+    "intention": "browsing analytics casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 33,
+    "interests": ["casino list with smart contract audits", "casino rating for on-chain fairness", "crypto casino reviews"],
+    "intention": "checking on-chain casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 36,
+    "interests": ["casino list with loyalty program details", "casino rating for VIP rewards", "loyalty casino reviews"],
+    "intention": "comparing loyalty programs",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 46,
+    "interests": ["casino list with tax reporting info", "casino rating for jurisdiction clarity", "tax friendly casino reviews"],
+    "intention": "checking casino tax info",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 25,
+    "interests": ["casino list with math model explanations", "casino rating for educational content", "educational casino reviews"],
+    "intention": "reading educational reviews",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 40,
+    "interests": ["casino list with multi-currency support", "casino rating for FX handling", "multi currency casino reviews"],
+    "intention": "comparing multi currency casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 32,
+    "interests": ["casino list with chat moderation policies", "casino rating for community safety", "community casino reviews"],
+    "intention": "checking community policies",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "1920x1200",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 47,
+    "interests": ["casino list with AML compliance details", "casino rating for KYC process", "AML casino reviews"],
+    "intention": "checking AML policies",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 29,
+    "interests": ["casino list with accessibility ratings", "casino rating for UX quality", "accessible casino reviews"],
+    "intention": "comparing accessible casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "2560x1600",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 36,
+    "interests": ["casino list with uptime statistics", "casino rating for platform stability", "reliable casino reviews"],
+    "intention": "checking platform uptime",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "1920x1080",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 38,
+    "interests": ["casino list with GDPR statements", "casino rating for privacy policy", "privacy focused casino reviews"],
+    "intention": "checking privacy policies",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "resolution": "2880x1800",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "male",
+    "age": 51,
+    "interests": ["casino list with data warehouse integrations", "casino rating for reporting tools", "reporting casino reviews"],
+    "intention": "comparing reporting tools",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "resolution": "3840x2160",
+    "proxy": "1.1.1.1:1"
+  },
+  {
+    "gender": "female",
+    "age": 34,
+    "interests": ["casino list with AB testing frameworks", "casino rating for experimentation tools", "experimentation casino reviews"],
+    "intention": "browsing experimentation casinos",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "resolution": "2560x1440",
+    "proxy": "1.1.1.1:1"
+  }
+
+
+  ]

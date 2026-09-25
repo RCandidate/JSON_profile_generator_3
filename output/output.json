@@ -1,393 +1,188 @@
 [
   {
     "age": 28,
-    "proxy": "socks5://45.136.27.36:1085",
+    "proxy": "socks5://45.159.22.22:1085",
     "backupProxies": [
-      "socks5://194.180.233.93:1085",
-      "socks5://193.142.38.163:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to optimize dice betting strategies with statistical models",
-      "best way to use probability theory in btc gambling",
-      "list of effective statistical analysis methods for dice betting",
-      "how to apply statistical models to improve btc gambling outcomes",
-      "how to create a winning dice betting strategy using statistics"
-    ],
-    "intention": "statistical strategies",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 26,
-    "proxy": "socks5://167.253.17.120:1085",
-    "backupProxies": [
-      "socks5://140.235.168.224:1085",
-      "socks5://162.252.52.189:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to play crypto dice games",
-      "best NFT dice games for beginners",
-      "step-by-step guide to smart contract audits",
-      "testing decentralized dice platforms with own funds",
-      "how to create a decentralized dice platform"
-    ],
-    "intention": "decentralized platforms",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
-    "resolution": "3840x1600"
-  },
-  {
-    "age": 62,
-    "proxy": "socks5://45.136.24.226:1085",
-    "backupProxies": [
-      "socks5://89.19.34.199:1085",
-      "socks5://199.96.164.141:1085"
+      "socks5://216.40.73.79:1085",
+      "socks5://199.96.165.83:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to create passive income stream",
-      "best dividend stocks for 2026",
-      "alternatives to dividend investing",
-      "passive income generation strategies"
+      "how to calculate dice game house edge",
+      "Monte Carlo simulator for dice game bankroll variance",
+      "list of legal casino RTP data",
+      "best way to track variance in dice games"
     ],
-    "intention": "comparable dividends",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "2560x1600"
-  },
-  {
-    "age": 40,
-    "proxy": "socks5://193.163.207.164:1085",
-    "backupProxies": [
-      "socks5://31.134.8.16:1085",
-      "socks5://31.134.0.59:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to gamble safely in 2026",
-      "best multi-sig wallet for gambling",
-      "list of casinos with board transparency",
-      "how to verify casino corporate governance",
-      "benefits of multi-sig wallets in online gambling"
-    ],
-    "intention": "transparency considering",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "5120x2880"
-  },
-  {
-    "age": 45,
-    "proxy": "socks5://162.252.52.219:1085",
-    "backupProxies": [
-      "socks5://45.147.235.163:1085",
-      "socks5://31.134.3.183:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to make contract enforceable in multiple jurisdictions",
-      "best way to draft multijurisdictional legal agreements",
-      "list of legal experts for cross-border disputes",
-      "how to draft jurisdiction clause for international contracts"
-    ],
-    "intention": "multijurisdictional unenforceable contract",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 25,
-    "proxy": "socks5://91.132.125.185:1085",
-    "backupProxies": [
-      "socks5://212.18.113.161:1085",
-      "socks5://167.253.16.218:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "How to enable Lightning Network instant payouts",
-      "List of cryptocurrencies with sub-10-second withdrawals",
-      "Best way to integrate withdrawal API access for real-time reinvestment"
-    ],
-    "intention": "reinvestment automating extraction",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.65 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 24,
-    "proxy": "socks5://31.134.3.215:1085",
-    "backupProxies": [
-      "socks5://45.145.128.198:1085",
-      "socks5://45.145.129.97:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to change wallet address for whitelisting",
-      "list of platforms with strict destination controls",
-      "best way to recover stolen cryptocurrency",
-      "how to set pre-registered payout destinations",
-      "how to bypass change-request cooldowns"
-    ],
-    "intention": "destination withdrawal platforms",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.70 Safari/537.36",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 77,
-    "proxy": "socks5://185.94.35.212:1085",
-    "backupProxies": [
-      "socks5://91.132.125.47:1085",
-      "socks5://31.134.5.158:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to make money with bitcoin gambling",
-      "best ways to monetize a hobby",
-      "senior entrepreneurship strategies",
-      "turning a hobby into a successful business"
-    ],
-    "intention": "gambling turning",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "intention": "simulator building",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
     "resolution": "3840x2160"
-  },
-  {
-    "age": 40,
-    "proxy": "socks5://212.87.216.142:1085",
-    "backupProxies": [
-      "socks5://199.96.165.194:1085",
-      "socks5://45.80.107.175:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to gamble safely in 2026",
-      "best multi-sig wallet for gambling",
-      "list of casinos with board transparency",
-      "how to verify casino corporate governance",
-      "benefits of multi-sig wallets in online gambling"
-    ],
-    "intention": "transparency considering savings",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "5120x2880"
-  },
-  {
-    "age": 28,
-    "proxy": "socks5://194.104.8.243:1085",
-    "backupProxies": [
-      "socks5://31.134.11.40:1085",
-      "socks5://212.18.127.99:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to create gender inclusive design in crypto gambling platforms",
-      "best practices for non-stereotypical themes in crypto gambling",
-      "list of modern aesthetic design trends for crypto gambling platforms",
-      "how to ensure accessibility and inclusivity in crypto gambling UI design",
-      "top ways to improve the aesthetic appeal of crypto gambling platforms"
-    ],
-    "intention": "supporting aesthetics platforms",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 31,
-    "proxy": "socks5://91.132.124.47:1085",
-    "backupProxies": [
-      "socks5://193.202.16.92:1085",
-      "socks5://45.141.128.74:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to play BTC crash dice",
-      "list of dice game variants for BTC",
-      "best way to use custom multipliers in BTC dice",
-      "where to find BTC dice crash hybrids",
-      "how to optimize BTC dice strategy"
-    ],
-    "intention": "exploring mechanics",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-    "resolution": "3840x2160"
-  },
-  {
-    "age": 53,
-    "proxy": "socks5://185.94.35.227:1085",
-    "backupProxies": [
-      "socks5://62.204.49.123:1085",
-      "socks5://45.147.11.39:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to bridge income gap during career re-entry",
-      "best legitimate ways to make money online",
-      "list of high paying online jobs",
-      "best way to supplement income during career break",
-      "how to start a side business while job hunting"
-    ],
-    "intention": "bridging income during",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "2560x1600"
   },
   {
     "age": 55,
-    "proxy": "socks5://91.246.51.178:1085",
+    "proxy": "socks5://130.49.77.113:1085",
     "backupProxies": [
-      "socks5://93.177.94.211:1085",
-      "socks5://194.110.150.153:1085"
+      "socks5://155.212.109.117:1085",
+      "socks5://91.132.198.51:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to verify annual payout integrity reports",
-      "best way to request external auditor attestations",
-      "process of conducting fraud detection transparency",
-      "list of system glitches and root causes",
-      "how to publish incident root cause analyses"
+      "how to recover gambling losses",
+      "best ways to manage gambling debt",
+      "list of help resources for gambling problems",
+      "how to stop gambling after losing money",
+      "best ways to handle casino losses"
     ],
-    "intention": "published incident",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "intention": "replacing lost",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "2560x1600"
   },
   {
     "age": 36,
-    "proxy": "socks5://212.18.113.254:1085",
+    "proxy": "socks5://77.220.193.100:1085",
     "backupProxies": [
-      "socks5://31.40.195.19:1085",
-      "socks5://45.145.128.53:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to document true cost of play in gambling",
-      "best way to find transparent fee structures",
-      "list of hidden fees in online gambling",
-      "how to analyze hidden costs in gambling",
-      "how to compare network fees in online gambling"
-    ],
-    "intention": "documenting including",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
-    "resolution": "2560x1600"
-  },
-  {
-    "age": 36,
-    "proxy": "socks5://193.163.92.141:1085",
-    "backupProxies": [
-      "socks5://45.133.113.124:1085",
-      "socks5://192.101.67.120:1085"
+      "socks5://31.134.5.39:1085",
+      "socks5://83.142.52.56:1085"
     ],
     "gender": "male",
     "interests": [
-      "How to build a gaming PC",
-      "Best gaming headsets",
-      "Home theater setup for gaming",
-      "Ideal gaming room lighting",
-      "Creating a gaming cave on a budget"
+      "how to ensure high availability of a licensed online casino platform using operator status APIs",
+      "best ways to implement load balancing for gambling sites",
+      "how to monitor incidents and downtime via status APIs in online casinos",
+      "how to set up automated alerts for casino API status changes"
     ],
-    "intention": "entertainment environment creating",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.0.0 Safari/537.36",
-    "resolution": "5120x1440"
-  },
-  {
-    "age": 76,
-    "proxy": "socks5://193.151.190.36:1085",
-    "backupProxies": [
-      "socks5://192.101.65.156:1085",
-      "socks5://199.96.167.62:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to withdraw bitcoins with human review",
-      "best way to avoid AI-only BTC withdrawal rejections",
-      "how to escalate BTC withdrawal issues via phone",
-      "top Bitcoin platforms with senior compliance teams"
-    ],
-    "intention": "prioritizes compliance platforms",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.69 Safari/537.36",
+    "intention": "availability ensuring",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
     "resolution": "1920x1080"
   },
   {
-    "age": 40,
-    "proxy": "socks5://140.235.2.183:1085",
+    "age": 28,
+    "proxy": "socks5://212.87.216.48:1085",
     "backupProxies": [
-      "socks5://45.147.233.227:1085",
-      "socks5://162.252.53.113:1085"
+      "socks5://185.201.137.167:1085",
+      "socks5://64.49.37.47:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to gamble safely in 2026",
-      "best multi-sig wallet for gambling",
-      "list of casinos with board transparency",
-      "how to verify casino corporate governance",
-      "benefits of multi-sig wallets in online gambling"
+      "how to find licensed casinos by country",
+      "what is a casino rating breakdown",
+      "best way to read trusted casino reviews"
     ],
-    "intention": "transparency considering",
+    "intention": "reading ratings",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 32,
+    "proxy": "socks5://94.154.127.170:1085",
+    "backupProxies": [
+      "socks5://45.148.235.250:1085",
+      "socks5://162.252.55.236:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to moderate dice game chat using NLP API",
+      "best way to detect toxic language in dice game chat",
+      "how to enforce community guidelines in online gambling using NLP",
+      "list of legal NLP APIs for toxic language detection",
+      "how to implement NLP toxicity detection in dice game chatbot"
+    ],
+    "intention": "dice NLP API",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1200"
+  },
+  {
+    "age": 40,
+    "proxy": "socks5://193.202.16.217:1085",
+    "backupProxies": [
+      "socks5://31.134.10.15:1085",
+      "socks5://94.154.113.150:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to compare multi currency casinos",
+      "list of top multi currency casinos",
+      "best way to evaluate casinos for currency support",
+      "multi currency casino comparison guide",
+      "casino reviews for multi-currency users"
+    ],
+    "intention": "comparing currency casinos",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 53,
+    "proxy": "socks5://45.148.233.114:1085",
+    "backupProxies": [
+      "socks5://185.88.100.145:1085",
+      "socks5://162.252.53.152:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to invest in cryptocurrency for beginners",
+      "how to navigate career gaps due to menopause",
+      "best way to boost income during career re-entry",
+      "list of flexible side jobs for career re-entry",
+      "how to leverage skills to bridge income gap"
+    ],
+    "intention": "bridging income",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "2560x1600"
+  },
+  {
+    "age": 34,
+    "proxy": "socks5://140.235.171.210:1085",
+    "backupProxies": [
+      "socks5://185.88.100.43:1085",
+      "socks5://45.88.13.41:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to verify crypto casino payouts",
+      "list of crypto casinos with big wins",
+      "best way to check provably fair crypto gambling",
+      "how to verify big cashout crypto casino wins",
+      "crypto casino payout proof verification"
+    ],
+    "intention": "verifiable provably platform",
     "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "5120x2880"
   },
   {
-    "age": 31,
-    "proxy": "socks5://45.147.232.81:1085",
+    "age": 35,
+    "proxy": "socks5://193.151.191.12:1085",
     "backupProxies": [
-      "socks5://89.19.34.174:1085",
-      "socks5://212.18.127.48:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to stream high-stakes dice games",
-      "best platforms for gambling live streams",
-      "setting up live streaming equipment for dice games",
-      "creating content for a gambling audience",
-      "how to attract viewers to my dice game live stream"
-    ],
-    "intention": "streaming sessions gambling",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "resolution": "3840x2160"
-  },
-  {
-    "age": 30,
-    "proxy": "socks5://199.96.166.61:1085",
-    "backupProxies": [
-      "socks5://193.151.190.226:1085",
-      "socks5://31.134.1.252:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "How to find trusted online casinos with sub-60-second BTC payouts",
-      "List of casinos supporting instant Bitcoin withdrawals",
-      "Best way to use Lightning Network for gambling",
-      "Fastest Bitcoin payout casinos",
-      "Instant Bitcoin withdrawal casinos ranking"
-    ],
-    "intention": "prioritizing casinos",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 27,
-    "proxy": "socks5://45.10.167.203:1085",
-    "backupProxies": [
-      "socks5://185.77.220.29:1085",
-      "socks5://194.180.232.143:1085"
-    ],
-    "gender": "male",
-    "interests": [
-      "how to test non-English interfaces for global usability",
-      "list of localization tools",
-      "best way to implement multi-language support",
-      "how to ensure localization accuracy in crypto gambling apps"
-    ],
-    "intention": "interfaces usability testing",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 40,
-    "proxy": "socks5://185.212.115.133:1085",
-    "backupProxies": [
-      "socks5://91.247.163.77:1085",
-      "socks5://45.136.24.205:1085"
+      "socks5://93.177.94.23:1085",
+      "socks5://93.177.119.227:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to identify trusted online gambling platforms",
-      "best way to check for responsible gambling certifications",
-      "list of IBAS certified online casinos",
-      "how to ensure independent dispute resolution in online casinos"
+      "how to compare no deposit offers",
+      "best way to find free spins in casinos",
+      "list of top rated no deposit casinos",
+      "how to claim no deposit bonuses",
+      "no deposit casino offers comparison guide"
     ],
-    "intention": "prioritizing independent",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "intention": "comparing deposit",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "resolution": "1920x1080"
+  },
+  {
+    "age": 55,
+    "proxy": "socks5://199.96.164.189:1085",
+    "backupProxies": [
+      "socks5://193.56.20.130:1085",
+      "socks5://212.87.219.111:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "How to contest a voided win due to system glitch",
+      "List of published incident root-cause analyses",
+      "Best way to ensure annual payout integrity reports",
+      "External auditor attestations for win claims",
+      "How to increase transparency in fraud detection"
+    ],
+    "intention": "published incident analyses",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
     "resolution": "2560x1600"
   }
 ]

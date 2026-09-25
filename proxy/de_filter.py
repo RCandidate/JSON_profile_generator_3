@@ -4,7 +4,7 @@ import ipaddress
 # --- НАСТРОЙКИ ---
 
 # 1. Имя входного файла
-INPUT_FILE = 'input_proxies.txt'
+INPUT_FILE = '10K.txt'
 
 # 2. Имя выходного файла
 OUTPUT_FILE = 'new_lir_proxies.txt'
