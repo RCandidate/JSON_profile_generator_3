@@ -1,188 +1,207 @@
 [
   {
-    "age": 28,
-    "proxy": "socks5://45.159.22.22:1085",
+    "age": 52,
+    "proxy": "socks5://94.154.113.46:1085",
     "backupProxies": [
-      "socks5://216.40.73.79:1085",
-      "socks5://199.96.165.83:1085"
+      "socks5://212.18.113.102:1085",
+      "socks5://140.235.3.137:1085"
     ],
-    "gender": "female",
+    "gender": "male",
     "interests": [
-      "how to calculate dice game house edge",
-      "Monte Carlo simulator for dice game bankroll variance",
-      "list of legal casino RTP data",
-      "best way to track variance in dice games"
+      "casino list by gambling license",
+      "casino rating for regulatory compliance",
+      "licensed casino reviews"
     ],
-    "intention": "simulator building",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "intention": "checking licenses casino",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
     "resolution": "3840x2160"
   },
   {
-    "age": 55,
-    "proxy": "socks5://130.49.77.113:1085",
+    "age": 38,
+    "proxy": "socks5://170.168.242.98:1085",
     "backupProxies": [
-      "socks5://155.212.109.117:1085",
-      "socks5://91.132.198.51:1085"
+      "socks5://140.235.171.142:1085",
+      "socks5://64.49.37.65:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to recover gambling losses",
-      "best ways to manage gambling debt",
-      "list of help resources for gambling problems",
-      "how to stop gambling after losing money",
-      "best ways to handle casino losses"
+      "no retroactive bonus voiding",
+      "pre-win T&C snapshots",
+      "change-log transparency"
     ],
-    "intention": "replacing lost",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "intention": "silently archives revoked",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.68 Safari/537.36",
     "resolution": "2560x1600"
   },
   {
-    "age": 36,
-    "proxy": "socks5://77.220.193.100:1085",
+    "age": 47,
+    "proxy": "socks5://91.247.163.13:1085",
     "backupProxies": [
-      "socks5://31.134.5.39:1085",
-      "socks5://83.142.52.56:1085"
+      "socks5://77.83.26.56:1085",
+      "socks5://170.168.243.243:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to ensure high availability of a licensed online casino platform using operator status APIs",
-      "best ways to implement load balancing for gambling sites",
-      "how to monitor incidents and downtime via status APIs in online casinos",
-      "how to set up automated alerts for casino API status changes"
+      "casino list with AML compliance details",
+      "casino rating for KYC process",
+      "AML casino reviews"
     ],
-    "intention": "availability ensuring",
-    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-    "resolution": "1920x1080"
-  },
-  {
-    "age": 28,
-    "proxy": "socks5://212.87.216.48:1085",
-    "backupProxies": [
-      "socks5://185.201.137.167:1085",
-      "socks5://64.49.37.47:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to find licensed casinos by country",
-      "what is a casino rating breakdown",
-      "best way to read trusted casino reviews"
-    ],
-    "intention": "reading ratings",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "intention": "checking policies",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     "resolution": "3840x2160"
   },
   {
-    "age": 32,
-    "proxy": "socks5://94.154.127.170:1085",
+    "age": 44,
+    "proxy": "socks5://193.163.92.182:1085",
     "backupProxies": [
-      "socks5://45.148.235.250:1085",
-      "socks5://162.252.55.236:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to moderate dice game chat using NLP API",
-      "best way to detect toxic language in dice game chat",
-      "how to enforce community guidelines in online gambling using NLP",
-      "list of legal NLP APIs for toxic language detection",
-      "how to implement NLP toxicity detection in dice game chatbot"
-    ],
-    "intention": "dice NLP API",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
-    "resolution": "1920x1200"
-  },
-  {
-    "age": 40,
-    "proxy": "socks5://193.202.16.217:1085",
-    "backupProxies": [
-      "socks5://31.134.10.15:1085",
-      "socks5://94.154.113.150:1085"
+      "socks5://185.212.115.102:1085",
+      "socks5://185.88.100.248:1085"
     ],
     "gender": "male",
     "interests": [
-      "how to compare multi currency casinos",
-      "list of top multi currency casinos",
-      "best way to evaluate casinos for currency support",
-      "multi currency casino comparison guide",
-      "casino reviews for multi-currency users"
+      "how to detect fraud in online casinos",
+      "what is anomaly detection in gambling",
+      "how to spot bonus abuse patterns"
     ],
-    "intention": "comparing currency casinos",
+    "intention": "fraudulent detecting regulated",
     "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
-    "resolution": "2560x1440"
-  },
-  {
-    "age": 53,
-    "proxy": "socks5://45.148.233.114:1085",
-    "backupProxies": [
-      "socks5://185.88.100.145:1085",
-      "socks5://162.252.53.152:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to invest in cryptocurrency for beginners",
-      "how to navigate career gaps due to menopause",
-      "best way to boost income during career re-entry",
-      "list of flexible side jobs for career re-entry",
-      "how to leverage skills to bridge income gap"
-    ],
-    "intention": "bridging income",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "2560x1600"
-  },
-  {
-    "age": 34,
-    "proxy": "socks5://140.235.171.210:1085",
-    "backupProxies": [
-      "socks5://185.88.100.43:1085",
-      "socks5://45.88.13.41:1085"
-    ],
-    "gender": "female",
-    "interests": [
-      "how to verify crypto casino payouts",
-      "list of crypto casinos with big wins",
-      "best way to check provably fair crypto gambling",
-      "how to verify big cashout crypto casino wins",
-      "crypto casino payout proof verification"
-    ],
-    "intention": "verifiable provably platform",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
-    "resolution": "5120x2880"
+    "resolution": "3840x2160"
   },
   {
     "age": 35,
-    "proxy": "socks5://193.151.191.12:1085",
+    "proxy": "socks5://45.148.235.111:1085",
     "backupProxies": [
-      "socks5://93.177.94.23:1085",
-      "socks5://93.177.119.227:1085"
+      "socks5://140.235.169.13:1085",
+      "socks5://88.218.46.55:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "best  gambling sites online",
+      "automated systems",
+      "withdrawal automation"
+    ],
+    "intention": "guaranteed withdrawal automated",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
+    "resolution": "5120x1440"
+  },
+  {
+    "age": 31,
+    "proxy": "socks5://212.18.113.173:1085",
+    "backupProxies": [
+      "socks5://140.235.168.90:1085",
+      "socks5://45.136.27.42:1085"
     ],
     "gender": "female",
     "interests": [
-      "how to compare no deposit offers",
-      "best way to find free spins in casinos",
-      "list of top rated no deposit casinos",
-      "how to claim no deposit bonuses",
-      "no deposit casino offers comparison guide"
+      "how to audit on-chain dice game smart contracts",
+      "what is provable fairness in crypto dice",
+      "how to verify payout accuracy in dice games"
     ],
-    "intention": "comparing deposit",
+    "intention": "dice RTP",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2560x1440"
+  },
+  {
+    "age": 43,
+    "proxy": "socks5://91.247.163.163:1085",
+    "backupProxies": [
+      "socks5://94.154.127.30:1085",
+      "socks5://45.147.234.171:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to analyze long-term casino trends",
+      "what is an outcome database in gambling",
+      "how to query casino SQL data"
+    ],
+    "intention": "analyzing licensed operator",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "resolution": "3840x2160"
+  },
+  {
+    "age": 35,
+    "proxy": "socks5://185.168.30.138:1085",
+    "backupProxies": [
+      "socks5://170.168.242.30:1085",
+      "socks5://199.96.167.118:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "dice game bonus terms analysis",
+      "wagering requirement calculators",
+      "EV modeling"
+    ],
+    "intention": "calculating expected bonuses",
     "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
     "resolution": "1920x1080"
   },
   {
-    "age": 55,
-    "proxy": "socks5://199.96.164.189:1085",
+    "age": 24,
+    "proxy": "socks5://185.212.115.103:1085",
     "backupProxies": [
-      "socks5://193.56.20.130:1085",
-      "socks5://212.87.219.111:1085"
+      "socks5://155.212.109.57:1085",
+      "socks5://94.154.113.45:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "how to find safe online betting platforms",
+      "best verified betting sites for beginners",
+      "list of trusted bookmakers with good reviews",
+      "how to start betting on a verified site"
+    ],
+    "intention": "starting betting",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    "resolution": "1920x1080"
+  },
+  {
+    "age": 50,
+    "proxy": "socks5://194.180.232.241:1085",
+    "backupProxies": [
+      "socks5://140.235.169.154:1085",
+      "socks5://77.83.27.173:1085"
+    ],
+    "gender": "male",
+    "interests": [
+      "dice game regulatory reporting",
+      "audit log APIs",
+      "compliance dashboards"
+    ],
+    "intention": "automating regulatory reporting",
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "resolution": "1920x1200"
+  },
+  {
+    "age": 29,
+    "proxy": "socks5://185.201.137.164:1085",
+    "backupProxies": [
+      "socks5://212.119.41.165:1085",
+      "socks5://178.20.215.251:1085"
     ],
     "gender": "female",
     "interests": [
-      "How to contest a voided win due to system glitch",
-      "List of published incident root-cause analyses",
-      "Best way to ensure annual payout integrity reports",
-      "External auditor attestations for win claims",
-      "How to increase transparency in fraud detection"
+      "what is the best way to play online with crypto ",
+      "freelancer income",
+      "location independence"
     ],
-    "intention": "published incident analyses",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.67 Safari/537.36",
+    "intention": "professional replacing",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.60 Safari/537.36",
     "resolution": "2560x1600"
+  },
+  {
+    "age": 25,
+    "proxy": "socks5://31.134.10.226:1085",
+    "backupProxies": [
+      "socks5://157.22.16.181:1085",
+      "socks5://157.22.75.204:1085"
+    ],
+    "gender": "female",
+    "interests": [
+      "how to model casino game math",
+      "what is combinatorics in card games",
+      "how to simulate casino probability in Python"
+    ],
+    "intention": "educational simulations",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+    "resolution": "2880x1800"
   }
 ]
